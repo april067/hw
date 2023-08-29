@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -14,154 +15,169 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<header>
-			<a class="logo logo-top" href="/index.html"><span class="logo-accent">Web</span>Studio</a>
-			<nav class="nav">
-				<ul class="nav-list">
-					<li class="nav-item">
-						<a class="nav-link nav-link-current" href="/index.html">Studio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/portfolio.html">Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contacts">Contacts</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header-address">
-				<a class="header-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-				<a class="header-address-link" href="tel:+12127724150">+1 212-772-4150</a>
+		<header class="header">
+			<div class="container">
+				<a class="logo logo-top" href="/index.html"><span class="logo-accent">Web</span>Studio</a>
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a class="nav-link nav-link-current" href="/index.html">Studio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/portfolio.html">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contacts">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-address">
+					<a class="header-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+					<a class="header-address-link" href="tel:+12127724150">+1 212-772-4150</a>
+				</div>
 			</div>
 		</header>
 
 		<main>
 			<!-- HERO -->
 			<section class="hero">
-				<h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-				<button class="hero-btn" type="button">Request our service</button>
+				<div class="container">
+					<h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+					<button class="hero-btn" type="button">Request our service</button>
+				</div>
 			</section>
 
 			<!-- ADVANTAGES -->
 			<section>
-				<h2 class="section-title">ADVANTAGES</h2>
-				<ul class="advantages-list">
-					<li class="advantages-item">
-						<h3 class="advantages-name">ATTENTION TO DETAILS</h3>
-						<p class="advantages-text">
-							We go into all the details and processes of your business to develop a customized
-							solution.
-						</p>
-					</li>
-					<li class="advantages-item">
-						<h3 class="advantages-name">PUNCTUALITY</h3>
-						<p class="advantages-text">
-							With us, you can feel safe and secure. An important principle of the company: respect
-							your time and deadlines.
-						</p>
-					</li>
-					<li class="advantages-item">
-						<h3 class="advantages-name">PLANNING</h3>
-						<p class="advantages-text">
-							You will be able to observe and participate in every phase of solution development and
-							implementation.
-						</p>
-					</li>
-					<li class="advantages-item">
-						<h3 class="advantages-name">MODERN TECHNOLOGIES</h3>
-						<p class="advantages-text">
-							We use innovative tools to solve assigned tasks. It's time to simplify work processes.
-						</p>
-					</li>
-				</ul>
+				<div class="container">
+					<h2 class="section-title">ADVANTAGES</h2>
+					<ul class="advantages-list">
+						<li class="advantages-item">
+							<h3 class="advantages-name">ATTENTION TO DETAILS</h3>
+							<p class="advantages-text">
+								We go into all the details and processes of your business to develop a customized
+								solution.
+							</p>
+						</li>
+						<li class="advantages-item">
+							<h3 class="advantages-name">PUNCTUALITY</h3>
+							<p class="advantages-text">
+								With us, you can feel safe and secure. An important principle of the company:
+								respect your time and deadlines.
+							</p>
+						</li>
+						<li class="advantages-item">
+							<h3 class="advantages-name">PLANNING</h3>
+							<p class="advantages-text">
+								You will be able to observe and participate in every phase of solution development
+								and implementation.
+							</p>
+						</li>
+						<li class="advantages-item">
+							<h3 class="advantages-name">MODERN TECHNOLOGIES</h3>
+							<p class="advantages-text">
+								We use innovative tools to solve assigned tasks. It's time to simplify work
+								processes.
+							</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<!-- SERVICES -->
 			<section>
-				<h2 class="section-title">What we do</h2>
-				<ul class="services-list">
-					<li class="services-item">
-						<img
-							class="services-img"
-							src="/images/servises/desktop/coding.jpg"
-							alt="coding"
-							width="370"
-						/>
-					</li>
-					<li class="services-item">
-						<img
-							class="services-img"
-							src="/images/servises/desktop/testing.jpg"
-							alt="testing"
-							width="370"
-						/>
-					</li>
-					<li class="services-item">
-						<img
-							class="services-img"
-							src="/images/servises/desktop/designing.jpg"
-							alt="designing"
-							width="370"
-						/>
-					</li>
-				</ul>
+				<div class="container">
+					<h2 class="section-title">What we do</h2>
+					<ul class="services-list">
+						<li class="services-item">
+							<img
+								class="services-img"
+								src="/images/servises/desktop/coding.jpg"
+								alt="coding"
+								width="370"
+							/>
+						</li>
+						<li class="services-item">
+							<img
+								class="services-img"
+								src="/images/servises/desktop/testing.jpg"
+								alt="testing"
+								width="370"
+							/>
+						</li>
+						<li class="services-item">
+							<img
+								class="services-img"
+								src="/images/servises/desktop/designing.jpg"
+								alt="designing"
+								width="370"
+							/>
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<!-- TEAM -->
 			<section>
-				<h2 class="section-title">Our Team</h2>
-				<ul class="team-list">
-					<li class="team-item">
-						<img
-							class="team-img"
-							src="/images/team/desktop/walker.jpg"
-							alt="Christopher Walker"
-							width="270"
-						/>
-						<h3 class="team-name">Christopher Walker</h3>
-						<p class="team-desc">Product Designer</p>
-					</li>
-					<li class="team-item">
-						<img
-							class="team-img"
-							src="/images/team/desktop/evans.jpg"
-							alt="Kylie Evans"
-							width="270"
-						/>
-						<h3 class="team-name">Kylie Evans</h3>
-						<p class="team-desc">Frontend Developer</p>
-					</li>
-					<li class="team-item">
-						<img
-							class="team-img"
-							src="/images/team/desktop/harris.jpg"
-							alt="Ryan Harris"
-							width="270"
-						/>
-						<h3 class="team-name">Ryan Harris</h3>
-						<p class="team-desc">Marketing</p>
-					</li>
-					<li class="team-item">
-						<img
-							class="team-img"
-							src="/images/team/desktop/moore.jpg"
-							alt="Tyler Moore"
-							width="270"
-						/>
-						<h3 class="team-name">Tyler Moore</h3>
-						<p class="team-desc">UI Designer</p>
-					</li>
-				</ul>
+				<div class="container">
+					<h2 class="section-title">Our Team</h2>
+					<ul class="team-list">
+						<li class="team-item">
+							<img
+								class="team-img"
+								src="/images/team/desktop/walker.jpg"
+								alt="Christopher Walker"
+								width="270"
+							/>
+							<h3 class="team-name">Christopher Walker</h3>
+							<p class="team-desc">Product Designer</p>
+						</li>
+						<li class="team-item">
+							<img
+								class="team-img"
+								src="/images/team/desktop/evans.jpg"
+								alt="Kylie Evans"
+								width="270"
+							/>
+							<h3 class="team-name">Kylie Evans</h3>
+							<p class="team-desc">Frontend Developer</p>
+						</li>
+						<li class="team-item">
+							<img
+								class="team-img"
+								src="/images/team/desktop/harris.jpg"
+								alt="Ryan Harris"
+								width="270"
+							/>
+							<h3 class="team-name">Ryan Harris</h3>
+							<p class="team-desc">Marketing</p>
+						</li>
+						<li class="team-item">
+							<img
+								class="team-img"
+								src="/images/team/desktop/moore.jpg"
+								alt="Tyler Moore"
+								width="270"
+							/>
+							<h3 class="team-name">Tyler Moore</h3>
+							<p class="team-desc">UI Designer</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 		</main>
 
 		<footer class="footer" id="contacts">
-			<a class="logo logo-bottom" href="/index.html"><span class="logo-accent">Web</span>Studio</a>
-			<address class="footer-contacts">
-				<p class="footer-address">695 Park Ave, NY 10065, USA</p>
-				<a class="footer-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-				<a class="footer-address-link" href="tel:+12127724150">+1 212-772-4150</a>
-			</address>
+			<div class="container">
+				<a class="logo logo-bottom" href="/index.html"
+					><span class="logo-accent">Web</span>Studio</a
+				>
+				<address class="footer-contacts">
+					<p class="footer-address">695 Park Ave, NY 10065, USA</p>
+					<a class="footer-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+					<a class="footer-address-link" href="tel:+12127724150">+1 212-772-4150</a>
+				</address>
+			</div>
 		</footer>
 	</body>
 </html>
