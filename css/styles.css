@@ -333,18 +333,33 @@ img {
 	color: var(--secondary-color);
 }
 
+.footer-address-link:hover,
+.footer-address-link:focus {
+	color: var(--accent-color);
+}
+
 /* --------------------- END FOOTER --------------------- */
 
 /* --------------------- PORTFOLIO --------------------- */
 
-.portfolio-btn-list {
+.portfolio {
+	padding: 94px 0;
+	border-top: 1px solid #ececec;
 }
 
-.portfolio-btn-item {
+.portfolio-btn-list {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.portfolio-btn-item:not(:last-child) {
+	margin-right: 8px;
 }
 
 .portfolio-btn {
 	display: block;
+	padding: 6px 23px;
 
 	border-radius: 4px;
 	border: none;
@@ -366,15 +381,29 @@ img {
 }
 
 .portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	flex-basis: calc((100%-2 * 30px) / 3);
 }
 
-.portfolio-item {
+/* .portfolio-item {
 }
 
 .portfolio-img {
+} */
+
+.portfolio-desc-wrap {
+	padding: 20px 24px;
+
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
 }
 
 .portfolio-name {
+	margin-bottom: 4px;
+
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 2;
