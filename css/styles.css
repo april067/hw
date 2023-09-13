@@ -340,16 +340,8 @@ img {
 }
 
 .team-social-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 44px;
 	height: 44px;
-	border-radius: 50%;
-}
-
-.team-social-item:hover {
-	background-color: var(--accent-color);
 }
 
 .team-social-item:not(:last-child) {
@@ -357,14 +349,27 @@ img {
 }
 
 .team-social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+
+	color: var(--icon-color);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+	color: var(--design-white-color);
+	background-color: var(--accent-color);
+}
+
+.team-social-icon {
 	width: 20px;
 	height: 20px;
 
-	fill: var(--icon-color);
-}
-
-.team-social-item:hover .team-social-link {
-	fill: var(--design-white-color);
+	fill: currentColor;
 }
 
 /* --------------------- END TEAM --------------------- */
@@ -395,7 +400,8 @@ img {
 	color: var(--icon-color);
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
 	border: 1px solid var(--accent-color);
 	color: var(--accent-color);
 }
@@ -417,8 +423,14 @@ img {
 	background-color: var(--bg-color);
 }
 
+.footer .container {
+	display: flex;
+	align-items: center;
+}
+
 .footer-address-wrap {
 	width: 231px;
+	margin-right: 70px;
 }
 
 .footer-contacts {
@@ -441,6 +453,53 @@ img {
 .footer-address-link:hover,
 .footer-address-link:focus {
 	color: var(--accent-color);
+}
+
+.footer-social {
+	width: 206px;
+}
+
+.footer-social-title {
+	margin-bottom: 20px;
+
+	font-size: 14px;
+	line-height: 1.143;
+	text-transform: uppercase;
+	color: var(--design-white-color);
+}
+
+.footer-social-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-social-item {
+	width: 44px;
+	height: 44px;
+}
+
+.footer-social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+
+	background-color: rgba(255, 255, 255, 0.1);
+	color: var(--design-white-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+	background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+	width: 20px;
+	height: 20px;
+
+	fill: currentColor;
 }
 
 /* --------------------- END FOOTER --------------------- */
