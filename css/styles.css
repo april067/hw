@@ -3,6 +3,9 @@
 	--logo-text: 'Raleway', sans-serif;
 	--main-color: #212121;
 	--secondary-color: #757575;
+	--design-white-color: #ffffff;
+	--design-black-color: #000000;
+	--icon-color: #afb1b8;
 	--accent-color: #2196f3;
 	--bg-color: #2f303a;
 	--bg-color-minor: #f5f4fa;
@@ -75,13 +78,13 @@ img {
 
 .logo-top {
 	padding: 24px 0;
-	color: #000000;
+	color: var(--design-black-color);
 }
 
 .logo-bottom {
 	display: block;
 
-	color: #ffffff;
+	color: var(--design-white-color);
 }
 
 .logo-accent {
@@ -191,7 +194,7 @@ img {
 	line-height: 1.364;
 	font-weight: 900;
 	letter-spacing: 0.06em;
-	color: #ffffff;
+	color: var(--design-white-color);
 }
 
 .hero-btn {
@@ -212,7 +215,7 @@ img {
 	font-weight: 700;
 	letter-spacing: 0.06em;
 	background-color: var(--accent-color);
-	color: #ffffff;
+	color: var(--design-white-color);
 }
 
 .hero-btn:hover,
@@ -309,12 +312,9 @@ img {
 .team-item {
 	border-radius: 0 0 4px 4px;
 
-	background-color: #ffffff;
+	background-color: var(--design-white-color);
 	box-shadow: 0 1px 3px 0 RGB(0, 0, 0, 12%), 0 1px 1px 0 RGB(0, 0, 0, 14%),
 		0 2px 1px 0 RGB(0, 0, 0, 20%);
-}
-
-.team-img {
 }
 
 .team-name {
@@ -326,11 +326,45 @@ img {
 }
 
 .team-desc {
-	margin-bottom: 30px;
+	margin-bottom: 16px;
 
 	text-align: center;
 	font-size: 16px;
 	color: var(--secondary-color);
+}
+
+.team-social-list {
+	display: flex;
+	margin-bottom: 30px;
+	padding: 0 32px;
+}
+
+.team-social-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+}
+
+.team-social-item:hover {
+	background-color: var(--accent-color);
+}
+
+.team-social-item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.team-social-link {
+	width: 20px;
+	height: 20px;
+
+	fill: var(--icon-color);
+}
+
+.team-social-item:hover .team-social-link {
+	fill: var(--design-white-color);
 }
 
 /* --------------------- END TEAM --------------------- */
@@ -353,7 +387,7 @@ img {
 }
 
 .footer-address {
-	color: #ffffff;
+	color: var(--design-white-color);
 }
 
 .footer-address-link {
@@ -408,7 +442,7 @@ img {
 	box-shadow: 0 4px 1px 0px RGB(0, 0, 0, 10%), 0 1px 2px 0px RGB(0, 0, 0, 8%),
 		0 2px 2px 0px RGB(0, 0, 0, 12%);
 	background-color: var(--accent-color);
-	color: #ffffff;
+	color: var(--design-white-color);
 }
 
 .portfolio-list {
