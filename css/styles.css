@@ -13,6 +13,7 @@
 body {
 	font-family: var(--main-text);
 	font-size: 14px;
+	line-height: 1.143;
 	font-weight: 400;
 	letter-spacing: 0.03em;
 
@@ -30,6 +31,7 @@ p {
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
 ul {
@@ -67,15 +69,18 @@ img {
 .logo {
 	font-family: var(--logo-text);
 	font-size: 26px;
+	line-height: 1.192;
 	font-weight: 700;
 }
 
 .logo-top {
-	padding: 15px 0;
+	padding: 24px 0;
 	color: #000000;
 }
 
 .logo-bottom {
+	display: block;
+
 	color: #ffffff;
 }
 
@@ -91,28 +96,12 @@ img {
 	font-weight: 700;
 }
 
-.header-address-link {
-	font-weight: 500;
-	letter-spacing: 0.02em;
-
-	color: var(--secondary-color);
-}
-
-.header-address-link:hover,
-.header-address-link:focus {
-	color: var(--accent-color);
-}
 /* --------------------- END COMMON --------------------- */
 
 /* --------------------- HEADER --------------------- */
 
-/* .header {
-} */
-
 .header > .container {
 	display: flex;
-	height: 80px;
-	align-items: center;
 }
 
 .nav {
@@ -123,16 +112,13 @@ img {
 	display: flex;
 }
 
-/* .nav-item {
-} */
-
 .nav-item:not(:last-child) {
 	margin-right: 50px;
 }
 
 .nav-link {
 	display: block;
-	padding: 20px 0;
+	padding: 32px 0;
 
 	font-weight: 500;
 	letter-spacing: 0.02em;
@@ -148,17 +134,41 @@ img {
 }
 
 .header-address {
+	display: flex;
 	margin-left: auto;
 }
 
 .header-address-link {
-	display: inline-block;
-	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	padding: 32px 0;
+
+	font-weight: 500;
+	letter-spacing: 0.02em;
+
+	color: var(--secondary-color);
 }
 
 .header-address-link:not(:last-child) {
 	margin-right: 40px;
 }
+
+.header-address-link:hover,
+.header-address-link:focus {
+	color: var(--accent-color);
+}
+
+.header-address-icon {
+	margin-right: 10px;
+
+	fill: currentColor;
+}
+
+.header-address-link:hover .header-address-icon,
+.header-address-link:focus .header-address-icon {
+	fill: currentColor;
+}
+
 /* --------------------- END HEADER --------------------- */
 
 /* --------------------- HERO --------------------- */
@@ -229,6 +239,23 @@ img {
 
 .advantages-item:not(:last-child) {
 	margin-right: 30px;
+}
+
+.advantages-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 270px;
+	height: 120px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+
+	background-color: var(--bg-color-minor);
+}
+
+.advantages-icon {
+	width: 70px;
+	height: 70px;
 }
 
 .advantages-name {
