@@ -92,7 +92,7 @@ img {
 }
 
 .section-title {
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 
 	text-align: center;
 	font-size: 36px;
@@ -368,6 +368,46 @@ img {
 }
 
 /* --------------------- END TEAM --------------------- */
+
+/* --------------------- CLIENTS --------------------- */
+
+.clients {
+	padding: 94px 0;
+}
+
+.clients-list {
+	display: flex;
+}
+
+.clients-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.clients-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 168px;
+	height: 90px;
+	border-radius: 4px;
+	border: 1px solid var(--icon-color);
+
+	color: var(--icon-color);
+}
+
+.clients-link:hover {
+	border: 1px solid var(--accent-color);
+	color: var(--accent-color);
+}
+
+.clients-icon {
+	width: 106px;
+	height: 60px;
+
+	fill: currentColor;
+}
+
+/* --------------------- END CLIENTS --------------------- */
 
 /* --------------------- FOOTER --------------------- */
 
