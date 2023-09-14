@@ -49,11 +49,9 @@ img {
 }
 
 .container {
-	width: 1170px;
+	width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
-
-	/* border: 1px dashed rgb(255, 0, 230); */
 }
 
 .visually-hidden {
@@ -304,15 +302,15 @@ img {
 	display: flex;
 }
 
-.services-item {
-}
+/* .services-item {
+} */
 
 .services-item:not(:last-child) {
 	margin-right: 30px;
 }
 
-.services-img {
-}
+/* .services-img {
+} */
 
 /* --------------------- END SERVICES --------------------- */
 
@@ -567,14 +565,48 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	flex-basis: calc((100%-2 * 30px) / 3);
+	width: calc((100%-2 * 30px) / 3);
 }
 
-/* .portfolio-item {
+.portfolio-link {
+	display: block;
 }
 
-.portfolio-img {
-} */
+.portfolio-link:hover,
+.portfolio-link:focus {
+	box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 0.12), 0 4px 4px 0 rgb(0, 0, 0, 0.06),
+		1px 4px 6px 0 rgb(0, 0, 0, 0.16);
+}
+
+.portfolio-wrapper {
+	position: relative;
+}
+
+.portfolio-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 370px;
+	height: 294px;
+	padding: 24px;
+
+	opacity: 0;
+	/* overflow: scroll; */
+	overflow: hidden;
+	background-color: rgb(33, 150, 243, 0.9);
+}
+
+.portfolio-link:hover .portfolio-overlay,
+.portfolio-link:focus .portfolio-overlay {
+	opacity: 1;
+}
+
+.portfolio-details {
+	font-size: 18px;
+	line-height: 1.556;
+	color: var(--design-white-color);
+}
 
 .portfolio-desc-wrap {
 	padding: 20px 24px;
