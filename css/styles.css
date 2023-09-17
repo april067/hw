@@ -667,6 +667,10 @@ img {
 	position: relative;
 }
 
+.portfolio-wrapper.overflow-hidden {
+	overflow: hidden;
+}
+
 .portfolio-overlay {
 	position: absolute;
 	top: 0;
@@ -676,14 +680,49 @@ img {
 	height: 294px;
 	padding: 24px;
 
-	opacity: 0;
-	overflow: hidden;
 	background-color: rgb(33, 150, 243, 0.9);
 }
 
-.portfolio-link:hover .portfolio-overlay,
-.portfolio-link:focus .portfolio-overlay {
+.portfolio-overlay.web {
+	transform: translateY(100%);
+	transition: transform 250ms var(--timing-fn);
+}
+
+.portfolio-link:hover .portfolio-overlay.web,
+.portfolio-link:focus .portfolio-overlay.web {
+	transform: translateY(0%);
+}
+
+.portfolio-overlay.design {
+	transform: rotateZ(0deg) scale(0);
+	transition: transform 500ms var(--timing-fn);
+}
+
+.portfolio-link:hover .portfolio-overlay.design,
+.portfolio-link:focus .portfolio-overlay.design {
+	transform: rotateZ(360deg) scale(1);
+}
+
+.portfolio-overlay.apps {
+	transform: perspective(350px) rotateY(180deg);
+	opacity: 0;
+	transition: transform 500ms var(--timing-fn), opacity 500ms var(--timing-fn);
+}
+
+.portfolio-link:hover .portfolio-overlay.apps,
+.portfolio-link:focus .portfolio-overlay.apps {
+	transform: rotateY(360deg);
 	opacity: 1;
+}
+
+.portfolio-overlay.marketing {
+	transform: scale(0);
+	transition: transform 500ms var(--timing-fn);
+}
+
+.portfolio-link:hover .portfolio-overlay.marketing,
+.portfolio-link:focus .portfolio-overlay.marketing {
+	transform: scale(1);
 }
 
 .portfolio-details {
