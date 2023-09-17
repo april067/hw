@@ -1,6 +1,7 @@
 :root {
 	--main-text: 'Roboto', sans-serif;
 	--logo-text: 'Raleway', sans-serif;
+
 	--main-color: #212121;
 	--secondary-color: #757575;
 	--design-white-color: #ffffff;
@@ -10,6 +11,8 @@
 	--portfolio-item-color: #eeeeee;
 	--bg-color: #2f303a;
 	--bg-color-minor: #f5f4fa;
+
+	--timing-fn: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------------- COMMON --------------------- */
@@ -139,7 +142,7 @@ img {
 	color: var(--accent-color);
 }
 
-.nav-link-current::after {
+.nav-link::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -151,6 +154,18 @@ img {
 	border-radius: 2px;
 
 	background-color: var(--accent-color);
+
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 250ms var(--timing-fn);
+}
+
+.nav-link:hover.nav-link::after {
+	transform: scale(1);
+}
+
+.nav-link-current::after {
+	transform: scale(1);
 }
 
 .header-address {
