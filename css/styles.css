@@ -8,6 +8,7 @@
 	--design-black-color: #000000;
 	--icon-color: #afb1b8;
 	--accent-color: #2196f3;
+	--acc-color-hover: #188ce8;
 	--portfolio-item-color: #eeeeee;
 	--bg-color: #2f303a;
 	--bg-color-minor: #f5f4fa;
@@ -253,7 +254,7 @@ img {
 
 .hero-btn:hover,
 .hero-btn:focus {
-	background-color: #188ce8;
+	background-color: var(--acc-color-hover);
 }
 
 /* --------------------- END HERO --------------------- */
@@ -545,6 +546,67 @@ img {
 	width: 20px;
 	height: 20px;
 
+	fill: currentColor;
+}
+
+.footer-subscribe {
+	margin-left: auto;
+}
+
+.footer-subscribe-title {
+	margin-bottom: 20px;
+
+	text-transform: uppercase;
+	color: var(--design-white-color);
+}
+
+.footer-subscribe-form {
+	display: flex;
+	align-items: center;
+}
+
+.footer-email {
+	width: 358px;
+	height: 50px;
+	margin-right: 12px;
+	padding: 15px 16px;
+	border-radius: 4px;
+	border: 1px solid rgb(255, 255, 255, 0.3);
+
+	font-size: 16px;
+	line-height: 1.25;
+	color: var(--design-white-color);
+	background-color: transparent;
+	box-shadow: 0 4px 4px 0 RGB(0, 0, 0, 15%);
+}
+
+.footer-email:placeholder-shown {
+	font-size: 16px;
+	line-height: 1.25;
+	color: rgb(0, 0, 0, 0.6);
+}
+
+.footer-btn {
+	display: flex;
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	border-radius: 4px;
+	border: none;
+	padding-left: 43px;
+	padding-right: 28px;
+
+	background-color: var(--accent-color);
+	color: var(--design-white-color);
+	font-size: 16px;
+	line-height: 1.188;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+}
+
+.footer-subscribe-icon {
+	margin-left: 25px;
 	fill: currentColor;
 }
 
