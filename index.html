@@ -448,7 +448,7 @@
 				<div class="footer-subscribe">
 					<h3 class="footer-subscribe-title">Subscribe to the newsletter</h3>
 					<form class="footer-subscribe-form">
-						<input class="footer-email" type="email" name="email" placeholder="E-mail" />
+						<input class="footer-email" type="email" name="subscribe-email" placeholder="E-mail" />
 						<button class="footer-btn" type="submit">
 							Subscribe
 							<svg class="footer-subscribe-icon" width="24" height="24">
@@ -461,13 +461,69 @@
 		</footer>
 
 		<!-- MODAL -->
-		<div class="modal-backdrop is-hidden" data-modal>
+		<div class="modal-backdrop" data-modal>
 			<div class="modal-window">
 				<button class="modal-button" type="button" data-modal-close>
 					<svg class="modal-close-icon">
 						<use href="./images/sprite.svg#icon-close"></use>
 					</svg>
 				</button>
+				<h3 class="modal-title">Leave your information and we'll call you back</h3>
+				<form class="modal-form">
+					<ul class="modal-form-list">
+						<li class="modal-form-item">
+							<input
+								class="modal-input"
+								type="text"
+								id="name"
+								placeholder=" "
+								name="modal-form-name"
+							/>
+							<label class="modal-label" for="name">Name</label>
+							<svg class="modal-icon" width="18" height="18">
+								<use href="./images/sprite.svg#icon-person"></use>
+							</svg>
+						</li>
+
+						<li class="modal-form-item">
+							<input
+								class="modal-input"
+								type="tel"
+								id="tel"
+								placeholder=" "
+								name="modal-form-tel"
+							/>
+							<label class="modal-label" for="tel">Telephone</label>
+							<svg class="modal-icon" width="18" height="18">
+								<use href="./images/sprite.svg#icon-phone"></use>
+							</svg>
+						</li>
+
+						<li class="modal-form-item">
+							<input
+								class="modal-input"
+								type="mail"
+								id="mail"
+								placeholder=" "
+								name="modal-form-email"
+							/>
+							<label class="modal-label" for="mail">E-mail</label>
+							<svg class="modal-icon" width="18" height="18">
+								<use href="./images/sprite.svg#icon-email"></use>
+							</svg>
+						</li>
+
+						<li class="modal-form-item">
+							<textarea
+								class="modal-textarea"
+								name="modal-form-comments"
+								id="comments"
+								placeholder="Enter the text"
+							></textarea>
+							<label class="modal-label" for="comments">Comments</label>
+						</li>
+					</ul>
+				</form>
 			</div>
 		</div>
 
