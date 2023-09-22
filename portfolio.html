@@ -20,23 +20,36 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<a class="logo logo-top" href="/index.html"><span class="logo-accent">Web</span>Studio</a>
+				<a class="logo logo--top" href="/index.html">
+					<span class="logo--accent">Web</span>Studio</a
+				>
 				<nav class="nav">
-					<ul class="nav-list">
-						<li class="nav-item">
-							<a class="nav-link" href="/index.html">Studio</a>
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link nav__link--current" href="/index.html">Studio</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link nav-link-current" href="/portfolio.html">Portfolio</a>
+						<li class="nav__item">
+							<a class="nav__link" href="/portfolio.html">Portfolio</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contacts">Contacts</a>
+						<li class="nav__item">
+							<a class="nav__link" href="#contacts">Contacts</a>
 						</li>
 					</ul>
 				</nav>
+
 				<div class="header-address">
-					<a class="header-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-					<a class="header-address-link" href="tel:+12127724150">+1 212-772-4150</a>
+					<a class="header-address__link" href="mailto:info@devstudio.com">
+						<svg class="header-address__icon" width="16" height="12">
+							<use href="./images/sprite.svg#icon-envelope"></use>
+						</svg>
+						info@devstudio.com</a
+					>
+					<a class="header-address__link" href="tel:+12127724150"
+						><svg class="header-address__icon" width="10" height="16">
+							<use href="./images/sprite.svg#icon-smartphone"></use>
+						</svg>
+						+1 212-772-4150</a
+					>
 				</div>
 			</div>
 		</header>
@@ -44,237 +57,238 @@
 		<main>
 			<section class="portfolio">
 				<div class="container">
-					<ul class="portfolio-btn-list">
-						<li class="portfolio-btn-item">
-							<button class="portfolio-btn" type="button">All</button>
+					<h1 class="visually-hidden">Portfolio</h1>
+					<ul class="buttons">
+						<li class="buttons__item">
+							<button class="buttons__snap" type="button">All</button>
 						</li>
-						<li class="portfolio-btn-item">
-							<button class="portfolio-btn" type="button">Web-sites</button>
+						<li class="buttons__item">
+							<button class="buttons__snap" type="button">Web-sites</button>
 						</li>
-						<li class="portfolio-btn-item">
-							<button class="portfolio-btn" type="button">Apps</button>
+						<li class="buttons__item">
+							<button class="buttons__snap" type="button">Apps</button>
 						</li>
-						<li class="portfolio-btn-item">
-							<button class="portfolio-btn" type="button">Design</button>
+						<li class="buttons__item">
+							<button class="buttons__snap" type="button">Design</button>
 						</li>
-						<li class="portfolio-btn-item">
-							<button class="portfolio-btn" type="button">Marketing</button>
+						<li class="buttons__item">
+							<button class="buttons__snap" type="button">Marketing</button>
 						</li>
 					</ul>
 
-					<ul class="portfolio-list">
-						<li class="portfolio-item">
-							<a class="portfolio-link" href="/">
-								<div class="portfolio-wrapper overflow-hidden">
+					<ul class="projects">
+						<li class="projects__item">
+							<a class="projects__link" href="/">
+								<div class="projects__wrapper overflow-hidden">
 									<img
-										class="portfolio-img"
+										class="projects__img"
 										src="/images/portfolio/desktop/web-site/technoduck.jpg"
 										alt="Technoduck"
 										width="370"
 									/>
-									<div class="portfolio-overlay web">
-										<p class="portfolio-details">
+									<div class="projects__overlay projects__overlay--web">
+										<p class="projects__details">
 											Technoduck is a state-of-the-art coronavirus distribution platform. Companies
 											use this platform for digital espionage and attacks on competitors' secure
 											servers.
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-desc-wrap">
-									<h3 class="portfolio-name">Technoduck</h3>
-									<p class="portfolio-desc">Web-site</p>
+								<div class="projects__desc-wrap">
+									<h3 class="projects__name">Technoduck</h3>
+									<p class="projects__desc">Web-site</p>
 								</div>
 							</a>
 						</li>
 
-						<li class="portfolio-item">
-							<a class="portfolio-link" href="/">
-								<div class="portfolio-wrapper">
+						<li class="projects__item">
+							<a class="projects__link" href="/">
+								<div class="projects__wrapper">
 									<img
-										class="portfolio-img"
+										class="projects__img"
 										src="/images/portfolio/desktop/design/poster-new-orlean-vs-golden-star.jpg"
 										alt="Poster New Orlean vs Golden Star"
 										width="370"
 									/>
-									<div class="portfolio-overlay design">
-										<p class="portfolio-details">
+									<div class="projects__overlay projects__overlay--design">
+										<p class="projects__details">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
 											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
 											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-desc-wrap">
-									<h3 class="portfolio-name">Poster New Orlean vs Golden Star</h3>
-									<p class="portfolio-desc">Design</p>
+								<div class="projects__desc-wrap">
+									<h3 class="projects__name">Poster New Orlean vs Golden Star</h3>
+									<p class="projects__desc">Design</p>
 								</div>
 							</a>
 						</li>
 
-						<li class="portfolio-item">
-							<a class="portfolio-link" href="/">
-								<div class="portfolio-wrapper">
+						<li class="projects__item">
+							<a class="projects__link" href="/">
+								<div class="projects__wrapper">
 									<img
-										class="portfolio-img"
+										class="projects__img"
 										src="/images/portfolio/desktop/apps/seafood-restaurant.jpg"
 										alt="Seafood Restaurant "
 										width="370"
 									/>
-									<div class="portfolio-overlay apps">
-										<p class="portfolio-details">
+									<div class="projects__overlay projects__overlay--apps">
+										<p class="projects__details">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
 											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
 											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-desc-wrap">
-									<h3 class="portfolio-name">Seafood Restaurant</h3>
-									<p class="portfolio-desc">Apps</p>
+								<div class="projects__desc-wrap">
+									<h3 class="projects__name">Seafood Restaurant</h3>
+									<p class="projects__desc">Apps</p>
 								</div>
 							</a>
 						</li>
 
-						<li class="portfolio-item">
-							<a class="portfolio-link" href="/">
-								<div class="portfolio-wrapper">
+						<li class="projects__item">
+							<a class="projects__link" href="/">
+								<div class="projects__wrapper">
 									<img
-										class="portfolio-img"
+										class="projects__img"
 										src="/images/portfolio/desktop/marketing/project-prime.jpg"
 										alt="Project Prime"
 										width="370"
 									/>
-									<div class="portfolio-overlay marketing">
-										<p class="portfolio-details">
+									<div class="projects__overlay projects__overlay--marketing">
+										<p class="projects__details">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
 											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
 											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-desc-wrap">
-									<h3 class="portfolio-name">Project Prime</h3>
-									<p class="portfolio-desc">Marketing</p>
+								<div class="projects__desc-wrap">
+									<h3 class="projects__name">Project Prime</h3>
+									<p class="projects__desc">Marketing</p>
 								</div>
 							</a>
 						</li>
 
-						<li class="portfolio-item">
-							<a class="portfolio-link" href="/">
-								<div class="portfolio-wrapper">
+						<li class="projects__item">
+							<a class="projects__link" href="/">
+								<div class="projects__wrapper">
 									<img
-										class="portfolio-img"
+										class="projects__img"
 										src="/images/portfolio/desktop/apps/project-boxes.jpg"
 										alt="Project Boxes"
 										width="370"
 									/>
-									<div class="portfolio-overlay apps">
-										<p class="portfolio-details">
+									<div class="projects__overlay projects__overlay--apps">
+										<p class="projects__details">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
 											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
 											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-desc-wrap">
-									<h3 class="portfolio-name">Project Boxes</h3>
-									<p class="portfolio-desc">Apps</p>
+								<div class="projects__desc-wrap">
+									<h3 class="projects__name">Project Boxes</h3>
+									<p class="projects__desc">Apps</p>
 								</div>
 							</a>
 						</li>
 
-						<li class="portfolio-item">
-							<a class="portfolio-link" href="/">
-								<div class="portfolio-wrapper overflow-hidden">
+						<li class="projects__item">
+							<a class="projects__link" href="/">
+								<div class="projects__wrapper overflow-hidden">
 									<img
-										class="portfolio-img"
+										class="projects__img"
 										src="/images/portfolio/desktop/web-site/inspiration-has-no-borders.jpg"
 										alt="Inspiration has no Borders"
 										width="370"
 									/>
-									<div class="portfolio-overlay web">
-										<p class="portfolio-details">
+									<div class="projects__overlay projects__overlay--web">
+										<p class="projects__details">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
 											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
 											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-desc-wrap">
-									<h3 class="portfolio-name">Inspiration has no Borders</h3>
-									<p class="portfolio-desc">Web-site</p>
+								<div class="projects__desc-wrap">
+									<h3 class="projects__name">Inspiration has no Borders</h3>
+									<p class="projects__desc">Web-site</p>
 								</div>
 							</a>
 						</li>
 
-						<li class="portfolio-item">
-							<a class="portfolio-link" href="/">
-								<div class="portfolio-wrapper">
+						<li class="projects__item">
+							<a class="projects__link" href="/">
+								<div class="projects__wrapper">
 									<img
-										class="portfolio-img"
+										class="projects__img"
 										src="/images/portfolio/desktop/design/limited-edition.jpg"
 										alt="Limited Edition"
 										width="370"
 									/>
-									<div class="portfolio-overlay design">
-										<p class="portfolio-details">
+									<div class="projects__overlay projects__overlay--design">
+										<p class="projects__details">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
 											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
 											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-desc-wrap">
-									<h3 class="portfolio-name">Limited Edition</h3>
-									<p class="portfolio-desc">Design</p>
+								<div class="projects__desc-wrap">
+									<h3 class="projects__name">Limited Edition</h3>
+									<p class="projects__desc">Design</p>
 								</div>
 							</a>
 						</li>
 
-						<li class="portfolio-item">
-							<a class="portfolio-link" href="/">
-								<div class="portfolio-wrapper">
+						<li class="projects__item">
+							<a class="projects__link" href="/">
+								<div class="projects__wrapper">
 									<img
-										class="portfolio-img"
+										class="projects__img"
 										src="/images/portfolio/desktop/marketing/project-lab.jpg"
 										alt="Project LAB"
 										width="370"
 									/>
-									<div class="portfolio-overlay marketing">
-										<p class="portfolio-details">
+									<div class="projects__overlay projects__overlay--marketing">
+										<p class="projects__details">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
 											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
 											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-desc-wrap">
-									<h3 class="portfolio-name">Project LAB</h3>
-									<p class="portfolio-desc">Marketing</p>
+								<div class="projects__desc-wrap">
+									<h3 class="projects__name">Project LAB</h3>
+									<p class="projects__desc">Marketing</p>
 								</div>
 							</a>
 						</li>
 
-						<li class="portfolio-item">
-							<a class="portfolio-link" href="/">
-								<div class="portfolio-wrapper">
+						<li class="projects__item">
+							<a class="projects__link" href="/">
+								<div class="projects__wrapper">
 									<img
-										class="portfolio-img"
+										class="projects__img"
 										src="/images/portfolio/desktop/apps/growing-business.jpg"
 										alt="Growing Business"
 										width="370"
 									/>
-									<div class="portfolio-overlay apps">
-										<p class="portfolio-details">
+									<div class="projects__overlay projects__overlay--apps">
+										<p class="projects__details">
 											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
 											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
 											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
 										</p>
 									</div>
 								</div>
-								<div class="portfolio-desc-wrap">
-									<h3 class="portfolio-name">Growing Business</h3>
-									<p class="portfolio-desc">Apps</p>
+								<div class="projects__desc-wrap">
+									<h3 class="projects__name">Growing Business</h3>
+									<p class="projects__desc">Apps</p>
 								</div>
 							</a>
 						</li>
@@ -285,47 +299,50 @@
 
 		<footer class="footer" id="contacts">
 			<div class="container">
-				<div class="footer-address-wrap">
-					<a class="logo logo-bottom" href="/index.html">
-						<span class="logo-accent">Web</span>Studio
+				<div class="footer-address">
+					<a class="logo logo--bottom" href="/index.html">
+						<span class="logo--accent">Web</span>Studio
 					</a>
-					<address class="footer-contacts">
-						<p class="footer-address">695 Park Ave, NY 10065, USA</p>
-						<a class="footer-address-link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
-						<a class="footer-address-link" href="tel:+12127724150">+1 212-772-4150</a>
+
+					<address class="footer-address__contacts">
+						<p class="footer-address__route">695 Park Ave, NY 10065, USA</p>
+						<a class="footer-address__link" href="mailto:info@devstudio.com">
+							info@devstudio.com
+						</a>
+						<a class="footer-address__link" href="tel:+12127724150">+1 212-772-4150</a>
 					</address>
 				</div>
 
 				<div class="footer-social">
-					<h3 class="footer-social-title">Find us on</h3>
-					<ul class="footer-social-list">
-						<li class="footer-social-item">
-							<a class="footer-social-link" href="https://instagram.com">
-								<svg class="footer-social-icon">
+					<h3 class="footer-social__title">Find us on</h3>
+					<ul class="social">
+						<li class="social__item">
+							<a class="social__link social__link--footer" href="https://instagram.com">
+								<svg class="social__icon">
 									<use href="./images/sprite.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
 
-						<li class="footer-social-item">
-							<a class="footer-social-link" href="https://twitter.com">
-								<svg class="footer-social-icon">
+						<li class="social__item">
+							<a class="social__link social__link--footer" href="https://twitter.com">
+								<svg class="social__icon">
 									<use href="./images/sprite.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
 
-						<li class="footer-social-item">
-							<a class="footer-social-link" href="https://facebook.com">
-								<svg class="footer-social-icon">
+						<li class="social__item">
+							<a class="social__link social__link--footer" href="https://facebook.com">
+								<svg class="social__icon">
 									<use href="./images/sprite.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
 
-						<li class="footer-social-item">
-							<a class="footer-social-link" href="https://linkedin.com">
-								<svg class="footer-social-icon">
+						<li class="social__item">
+							<a class="social__link social__link--footer" href="https://linkedin.com">
+								<svg class="social__icon">
 									<use href="./images/sprite.svg#icon-linkedin"></use>
 								</svg>
 							</a>
@@ -334,12 +351,17 @@
 				</div>
 
 				<div class="footer-subscribe">
-					<h3 class="footer-subscribe-title">Subscribe to the newsletter</h3>
-					<form class="footer-subscribe-form">
-						<input class="footer-email" type="email" name="subscribe-email" placeholder="E-mail" />
-						<button class="footer-btn" type="submit">
+					<h3 class="footer-subscribe__title">Subscribe to the newsletter</h3>
+					<form class="subscribe-form">
+						<input
+							class="subscribe-form__email"
+							type="email"
+							name="subscribe-email"
+							placeholder="E-mail"
+						/>
+						<button class="subscribe-form__btn" type="submit">
 							Subscribe
-							<svg class="footer-subscribe-icon" width="24" height="24">
+							<svg class="subscribe-form__icon" width="24" height="24">
 								<use href="./images/sprite.svg#icon-send"></use>
 							</svg>
 						</button>
