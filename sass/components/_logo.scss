@@ -1,0 +1,20 @@
+.logo {
+	font-family: var(--logo-text);
+	font-size: 26px;
+	line-height: 1.192;
+	font-weight: 700;
+}
+
+.logo--top {
+	padding: 24px 0;
+
+	color: var(--design-black-color);
+}
+
+.logo--bottom {
+	color: var(--design-white-color);
+}
+
+.logo--accent {
+	color: var(--accent-color);
+}
