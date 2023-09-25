@@ -1,0 +1,26 @@
+%main-button {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	height: 50px;
+	border-radius: 4px;
+	border: none;
+
+	color: var(--design-white-color);
+	background-color: var(--accent-color);
+	box-shadow: 0 4px 4px 0 RGB(0, 0, 0, 15%);
+	cursor: pointer;
+
+	font-size: 16px;
+	line-height: 1.875;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+
+	transition: background-color 250ms var(--timing-fn);
+
+	&:hover,
+	&:focus {
+		background-color: var(--acc-color-hover);
+	}
+}

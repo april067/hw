@@ -137,24 +137,7 @@
 }
 
 .info-form__button {
-	display: block;
-	width: 200px;
-	height: 50px;
-	padding: 0;
+	@extend %main-button;
+
 	margin: 0 auto;
-	border: none;
-	border-radius: 4px;
-
-	font-size: 16px;
-	line-height: 1.875;
-	letter-spacing: 0.06em;
-	color: var(--design-white-color);
-	background-color: var(--accent-color);
-
-	transition: background-color 250ms var(--timing-fn);
-
-	&:hover,
-	&:focus {
-		background-color: var(--acc-color-hover);
-	}
 }
