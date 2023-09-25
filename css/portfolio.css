@@ -390,8 +390,8 @@ img {
   border: none;
   color: var(--design-white-color);
   background-color: var(--accent-color);
-  -webkit-box-shadow: 0 4px 4px 0 RGB(0, 0, 0, 15%);
-          box-shadow: 0 4px 4px 0 RGB(0, 0, 0, 15%);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
   font-size: 16px;
   line-height: 1.875;
@@ -666,8 +666,8 @@ img {
 .buttons__snap:hover, .buttons__snap:focus {
   color: var(--design-white-color);
   background-color: var(--accent-color);
-  -webkit-box-shadow: 0 4px 1px 0px RGB(0, 0, 0, 10%), 0 1px 2px 0px RGB(0, 0, 0, 8%), 0 2px 2px 0px RGB(0, 0, 0, 12%);
-          box-shadow: 0 4px 1px 0px RGB(0, 0, 0, 10%), 0 1px 2px 0px RGB(0, 0, 0, 8%), 0 2px 2px 0px RGB(0, 0, 0, 12%);
+  -webkit-box-shadow: 0 4px 1px 0px rgba(0, 0, 0, 0.1), 0 1px 2px 0px rgba(0, 0, 0, 0.08), 0 2px 2px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 4px 1px 0px rgba(0, 0, 0, 0.1), 0 1px 2px 0px rgba(0, 0, 0, 0.08), 0 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .footer {
@@ -751,23 +751,33 @@ img {
   line-height: 1.25;
   color: var(--design-white-color);
   background-color: transparent;
-  -webkit-box-shadow: 0 4px 4px 0 RGB(0, 0, 0, 15%);
-          box-shadow: 0 4px 4px 0 RGB(0, 0, 0, 15%);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-.subscribe-form__email:-moz-placeholder-shown {
+.subscribe-form__email::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(250, 250, 250, 0.6);
+}
+.subscribe-form__email::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(250, 250, 250, 0.6);
 }
 .subscribe-form__email:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(250, 250, 250, 0.6);
 }
-.subscribe-form__email:placeholder-shown {
+.subscribe-form__email::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(250, 250, 250, 0.6);
+}
+.subscribe-form__email::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(250, 250, 250, 0.6);
 }
 
 .subscribe-form__btn {

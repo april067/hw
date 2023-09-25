@@ -28,7 +28,7 @@
 	&:focus {
 		color: var(--design-white-color);
 		background-color: var(--accent-color);
-		box-shadow: 0 4px 1px 0px RGB(0, 0, 0, 10%), 0 1px 2px 0px RGB(0, 0, 0, 8%),
-			0 2px 2px 0px RGB(0, 0, 0, 12%);
+		box-shadow: 0 4px 1px 0px rgba(0, 0, 0, 10%), 0 1px 2px 0px rgba(0, 0, 0, 8%),
+			0 2px 2px 0px rgba(0, 0, 0, 12%);
 	}
 }

@@ -390,8 +390,8 @@ img {
   border: none;
   color: var(--design-white-color);
   background-color: var(--accent-color);
-  -webkit-box-shadow: 0 4px 4px 0 RGB(0, 0, 0, 15%);
-          box-shadow: 0 4px 4px 0 RGB(0, 0, 0, 15%);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
   font-size: 16px;
   line-height: 1.875;
@@ -633,8 +633,8 @@ img {
   padding-bottom: 30px;
   border-radius: 0 0 4px 4px;
   background-color: var(--design-white-color);
-  -webkit-box-shadow: 0 1px 3px 0 RGB(0, 0, 0, 12%), 0 1px 1px 0 RGB(0, 0, 0, 14%), 0 2px 1px 0 RGB(0, 0, 0, 20%);
-          box-shadow: 0 1px 3px 0 RGB(0, 0, 0, 12%), 0 1px 1px 0 RGB(0, 0, 0, 14%), 0 2px 1px 0 RGB(0, 0, 0, 20%);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .team__name {
@@ -775,23 +775,33 @@ img {
   line-height: 1.25;
   color: var(--design-white-color);
   background-color: transparent;
-  -webkit-box-shadow: 0 4px 4px 0 RGB(0, 0, 0, 15%);
-          box-shadow: 0 4px 4px 0 RGB(0, 0, 0, 15%);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-.subscribe-form__email:-moz-placeholder-shown {
+.subscribe-form__email::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(250, 250, 250, 0.6);
+}
+.subscribe-form__email::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(250, 250, 250, 0.6);
 }
 .subscribe-form__email:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(250, 250, 250, 0.6);
 }
-.subscribe-form__email:placeholder-shown {
+.subscribe-form__email::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(250, 250, 250, 0.6);
+}
+.subscribe-form__email::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(250, 250, 250, 0.6);
 }
 
 .subscribe-form__btn {
@@ -985,7 +995,11 @@ img {
 .info-form__textarea:focus {
   border-color: var(--accent-color);
 }
-.info-form__textarea:-moz-placeholder-shown {
+.info-form__textarea::-webkit-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.01em;
+}
+.info-form__textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.01em;
 }
@@ -993,7 +1007,11 @@ img {
   color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.01em;
 }
-.info-form__textarea:placeholder-shown {
+.info-form__textarea::-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.01em;
+}
+.info-form__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.01em;
 }
