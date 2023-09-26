@@ -6,6 +6,13 @@ body {
 	letter-spacing: 0.03em;
 
 	color: var(--main-color);
+
+	&.dark-theme {
+		--main-color: #ffffff;
+		--secondary-color: hsl(0, 2%, 68%);
+		--bg-color-minor: #aaaaaa78;
+		background-color: #383839;
+	}
 }
 
 h1,
