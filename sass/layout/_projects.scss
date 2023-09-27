@@ -1,0 +1,116 @@
+.portfolio {
+	padding: 94px 0;
+	border-top: 1px solid #ececec;
+}
+
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.projects__item {
+	flex-basis: calc((100% - 2 * 30px) / 3);
+}
+
+.projects__link {
+	display: block;
+
+	transition: box-shadow 250ms var(--timing-fn);
+
+	&:hover,
+	&:focus {
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+			1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+	}
+}
+
+.projects__wrapper {
+	position: relative;
+
+	&.overflow-hidden {
+		overflow: hidden;
+	}
+}
+
+.projects__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 370px;
+	height: 294px;
+	padding: 24px;
+
+	background-color: rgba(33, 150, 243, 0.9);
+
+	&--web {
+		transform: translateY(100%);
+		transition: transform 250ms var(--timing-fn);
+	}
+
+	.projects__link:hover &--web,
+	.projects__link:focus &--web {
+		transform: translateY(0%);
+	}
+
+	&--design {
+		transform: rotateZ(0deg) scale(0);
+		transition: transform 500ms var(--timing-fn);
+	}
+
+	.projects__link:hover &--design,
+	.projects__link:focus &--design {
+		transform: rotateZ(360deg) scale(1);
+	}
+
+	&--apps {
+		transform: perspective(350px) rotateY(180deg);
+		opacity: 0;
+		transition: transform 500ms var(--timing-fn), opacity 500ms var(--timing-fn);
+	}
+
+	.projects__link:hover &--apps,
+	.projects__link:focus &--apps {
+		transform: rotateY(360deg);
+		opacity: 1;
+	}
+
+	&--marketing {
+		transform: scale(0);
+		transition: transform 500ms var(--timing-fn);
+	}
+
+	.projects__link:hover &--marketing,
+	.projects__link:focus &--marketing {
+		transform: scale(1);
+	}
+}
+
+.projects__details {
+	font-size: 18px;
+	line-height: 1.556;
+	color: var(--design-white-color);
+}
+
+.projects__desc-wrap {
+	padding: 20px 24px;
+	border-right: 1px solid var(--projects-item-color);
+	border-bottom: 1px solid var(--projects-item-color);
+	border-left: 1px solid var(--projects-item-color);
+}
+
+.projects__name {
+	margin-bottom: 4px;
+
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.projects__desc {
+	font-size: 16px;
+	line-height: 1.875;
+	color: var(--secondary-color);
+}

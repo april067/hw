@@ -1,0 +1,54 @@
+body {
+	font-family: var(--main-text);
+	font-size: 14px;
+	line-height: 1.143;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+
+	color: var(--main-color);
+
+	&.dark-theme {
+		--main-color: #ffffff;
+		--secondary-color: hsl(0, 2%, 68%);
+		--bg-color-minor: #aaaaaa78;
+		background-color: #383839;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.section-title {
+	margin-bottom: 50px;
+
+	text-align: center;
+	font-size: 36px;
+	font-weight: 700;
+}
