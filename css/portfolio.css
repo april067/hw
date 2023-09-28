@@ -306,7 +306,6 @@ img {
   min-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid rgba(91, 91, 234, 0.597);
 }
 @media screen and (max-width: 319px) {
   .container {
@@ -330,10 +329,18 @@ img {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
+  line-height: 1.179;
   font-weight: 700;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .subscribe-form__btn {
