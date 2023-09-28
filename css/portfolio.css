@@ -303,9 +303,25 @@ img {
 }
 
 .container {
-  width: 1200px;
+  min-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
+  outline: 1px solid rgba(91, 91, 234, 0.597);
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section-title {
@@ -341,14 +357,25 @@ img {
 
 .logo {
   font-family: var(--logo-text);
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.167;
   font-weight: 700;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .logo--top {
-  padding: 24px 0;
+  padding: 16px 0;
   color: var(--design-black-color);
+}
+@media screen and (min-width: 768px) {
+  .logo--top {
+    padding: 24px 0;
+  }
 }
 
 .logo--bottom {
@@ -422,6 +449,11 @@ img {
 .nav {
   margin-left: 93px;
 }
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
 
 .nav__list {
   display: -webkit-box;
@@ -479,10 +511,19 @@ img {
 }
 
 .header-address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .header-address {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header-address__link {
@@ -492,18 +533,28 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 32px 0;
+  padding: 10px 0;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
   -webkit-transition: color 250ms var(--timing-fn);
   transition: color 250ms var(--timing-fn);
 }
-.header-address__link:not(:last-child) {
-  margin-right: 40px;
-}
 .header-address__link:hover, .header-address__link:focus {
   color: var(--accent-color);
+}
+@media screen and (max-width: 1199px) {
+  .header-address__link:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-address__link {
+    padding: 32px 0;
+  }
+  .header-address__link:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 
 .header-address__icon {
