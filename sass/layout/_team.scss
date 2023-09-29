@@ -1,4 +1,5 @@
 .team {
+
 	padding: 60px 0;
 
 	background: var(--bg-color-minor);
@@ -18,11 +19,13 @@
 
 .team__item {
 	padding-bottom: 24px;
+
 	border-radius: 0 0 4px 4px;
 
 	background-color: var(--design-white-color);
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 12%), 0 1px 1px 0 rgba(0, 0, 0, 14%),
 		0 2px 1px 0 rgba(0, 0, 0, 20%);
+
 
 	@media screen and (min-width: 768px) {
 		width: 354px;
@@ -36,6 +39,7 @@
 
 .team__img {
 	width: 100%;
+
 }
 
 .team__name {
