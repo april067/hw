@@ -1,5 +1,4 @@
 .advantages {
-
 	padding: 60px 0;
 
 	@media screen and (min-width: 1200px) {
@@ -28,7 +27,6 @@
 
 	@media screen and (min-width: 1200px) {
 		flex-basis: calc((100% - 3 * 30px) / 4);
-
 	}
 }
 
@@ -50,6 +48,10 @@
 }
 
 .advantages__name {
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
+
 	padding-bottom: 10px;
 
 	font-size: inherit;
