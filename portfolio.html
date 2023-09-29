@@ -19,7 +19,7 @@
 				<a class="logo logo--top" href="/index.html">
 					<span class="logo--accent">Web</span>Studio</a
 				>
-				<nav class="nav">
+				<nav class="nav mobmenu-hidden">
 					<ul class="nav__list">
 						<li class="nav__item">
 							<a class="nav__link" href="/index.html">Studio</a>
@@ -33,7 +33,7 @@
 					</ul>
 				</nav>
 
-				<div class="header-address">
+				<div class="header-address mobmenu-hidden">
 					<a class="header-address__link" href="mailto:info@devstudio.com">
 						<svg class="header-address__icon" width="16" height="12">
 							<use href="./images/sprite.svg#icon-envelope"></use>
@@ -47,10 +47,22 @@
 						+1 212-772-4150</a
 					>
 				</div>
+				<button class="mobmenu__button" type="button">
+					<svg class="mobmenu__button-icon" width="40" height="40">
+						<use
+							class="mobmenu__button-icon--close"
+							href="./images/sprite.svg#icon-mobmenu-close"
+						></use>
+						<use
+							class="mobmenu__button-icon--open"
+							href="./images/sprite.svg#icon-mobmenu-open"
+						></use>
+					</svg>
+				</button>
 			</div>
 		</header>
 
-		<main>
+		<!-- <main>
 			<section class="portfolio">
 				<div class="container">
 					<h1 class="visually-hidden">Portfolio</h1>
@@ -291,7 +303,7 @@
 					</ul>
 				</div>
 			</section>
-		</main>
+		</main> -->
 
 		<footer class="footer" id="contacts">
 			<div class="container">

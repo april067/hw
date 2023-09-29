@@ -343,7 +343,7 @@ img {
   }
 }
 
-.hero__btn {
+.subscribe-form__btn, .hero__btn {
   display: block;
   margin: 0;
   padding: 0;
@@ -363,7 +363,7 @@ img {
   -webkit-transition: background-color 250ms var(--timing-fn);
   transition: background-color 250ms var(--timing-fn);
 }
-.hero__btn:hover, .hero__btn:focus {
+.subscribe-form__btn:hover, .hero__btn:hover, .subscribe-form__btn:focus, .hero__btn:focus {
   background-color: var(--acc-color-hover);
 }
 
@@ -405,8 +405,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.social--team {
   width: 206px;
   margin: 0 auto;
 }
@@ -864,6 +862,167 @@ img {
 .clients__icon {
   width: 106px;
   height: 60px;
+  fill: currentColor;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: var(--bg-color);
+}
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.footer-address__contacts {
+  margin-top: 28px;
+  font-style: normal;
+}
+
+.footer-address__route {
+  color: var(--design-white-color);
+}
+
+.footer-address__link {
+  display: block;
+  margin-top: 12px;
+  line-height: 1.143;
+  color: var(--secondary-color);
+  -webkit-transition: color 250ms var(--timing-fn);
+  transition: color 250ms var(--timing-fn);
+}
+.footer-address__link:hover, .footer-address__link:focus {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .footer-address,
+  .footer-social {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-address,
+  .footer-social {
+    width: 50%;
+  }
+}
+
+.footer-social__title,
+.footer-subscribe__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+  color: var(--design-white-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe {
+    margin-top: 60px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.subscribe-form__email {
+  width: 100%;
+  height: 50px;
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--design-white-color);
+  background-color: transparent;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.subscribe-form__email::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(250, 250, 250, 0.6);
+}
+.subscribe-form__email::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(250, 250, 250, 0.6);
+}
+.subscribe-form__email:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(250, 250, 250, 0.6);
+}
+.subscribe-form__email::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(250, 250, 250, 0.6);
+}
+.subscribe-form__email::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(250, 250, 250, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .subscribe-form__email {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__email {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.subscribe-form__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 43px;
+  padding-right: 28px;
+}
+@media screen and (max-width: 1199px) {
+  .subscribe-form__btn {
+    margin: 20px auto 0;
+  }
+}
+
+.subscribe-form__icon {
+  margin-left: 25px;
   fill: currentColor;
 }
 

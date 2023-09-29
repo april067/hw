@@ -1,11 +1,12 @@
 .social {
 	display: flex;
 	justify-content: space-between;
-
-	&--team {
-		width: 206px;
-		margin: 0 auto;
-	}
+	width: 206px;
+	margin: 0 auto;
+	// &--team {
+	// 	width: 206px;
+	// 	margin: 0 auto;
+	// }
 }
 
 .social__item {
