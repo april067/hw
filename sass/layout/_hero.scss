@@ -1,22 +1,54 @@
 .hero {
-	padding: 200px 0;
 
-	background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-		url(../images/hero/desktop/hero.jpg);
+	padding: 118px 0;
+
+	// background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	// 	url(../images/hero/desktop/hero.jpg);
+	background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 1600px;
+	background-size: 480px;
+
+	@media screen and (min-width: 768px) {
+		background-size: 768px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 200px 0;
+
+		background-size: 1600px;
+	}
 }
 
 .hero__title {
-	padding: 0 237px;
+	padding: 0 45px;
 
+	font-size: 26px;
 	text-align: center;
-	font-size: 44px;
-	line-height: 1.364;
+	line-height: 1.615;
 	font-weight: 900;
 	letter-spacing: 0.06em;
 	color: var(--design-white-color);
+
+	@media screen and (max-width: 479px) {
+		// padding: 0 9.375vw;
+		padding: 0 8vw;
+
+		// font-size: 5.417vw;
+		font-size: 6vw;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 0 189px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 0 237px;
+
+		font-size: 44px;
+		line-height: 1.364;
+	}
+
 }
 
 .hero__btn {

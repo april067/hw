@@ -1,14 +1,25 @@
 .logo {
 	font-family: var(--logo-text);
-	font-size: 26px;
-	line-height: 1.192;
+
+	font-size: 24px;
+	line-height: 1.167;
 	font-weight: 700;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 26px;
+		line-height: 1.192;
+	}
 }
 
 .logo--top {
-	padding: 24px 0;
+	padding: 16px 0;
 
 	color: var(--design-black-color);
+
+	@media screen and (min-width: 768px) {
+		padding: 24px 0;
+	}
+
 }
 
 .logo--bottom {
