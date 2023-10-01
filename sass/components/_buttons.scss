@@ -3,28 +3,21 @@
 	flex-wrap: wrap;
 	column-gap: 8px;
 	row-gap: 15px;
+	margin-bottom: 40px;
 
 	@media screen and (max-width: 767px) {
-		width: 274px;
+		width: 276px;
 	}
 
 	@media screen and (min-width: 768px) {
 		justify-content: center;
+		margin-bottom: 30px;
 	}
-	// margin-bottom: 50px;
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
 }
-
-// .buttons__item {
-// 	&:not(:last-child) {
-// 		margin-right: 8px;
-// 	}
-
-// 	@media screen and (max-width: 767px) {
-// 		&:nth-child(1) {
-// 			margin-bottom: 15px;
-// 		}
-// 	}
-// }
 
 .buttons__snap {
 	display: block;

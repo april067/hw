@@ -13,6 +13,10 @@ body {
 		--bg-color-minor: #aaaaaa78;
 		background-color: #383839;
 	}
+
+	&.modal-open {
+		overflow: hidden;
+	}
 }
 
 h1,
@@ -40,7 +44,6 @@ img {
 }
 
 .container {
-
 	min-width: 320px;
 	padding: 0 15px;
 	margin: 0 auto;
@@ -76,5 +79,4 @@ img {
 		font-size: 36px;
 		line-height: 1.167;
 	}
-
 }

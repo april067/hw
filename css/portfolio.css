@@ -277,6 +277,9 @@ body.dark-theme {
   --bg-color-minor: #aaaaaa78;
   background-color: #383839;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 h1,
 h2,
@@ -598,8 +601,19 @@ img {
 }
 
 .projects__item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .projects__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .projects__link {
@@ -621,12 +635,16 @@ img {
   overflow: hidden;
 }
 
+.projects__img {
+  width: 100%;
+}
+
 .projects__overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   padding: 24px;
   background-color: rgba(33, 150, 243, 0.9);
 }
@@ -693,6 +711,11 @@ img {
   border-bottom: 1px solid var(--projects-item-color);
   border-left: 1px solid var(--projects-item-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects__desc-wrap {
+    height: 146px;
+  }
+}
 
 .projects__name {
   margin-bottom: 4px;
@@ -718,10 +741,11 @@ img {
      -moz-column-gap: 8px;
           column-gap: 8px;
   row-gap: 15px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 767px) {
   .buttons {
-    width: 274px;
+    width: 276px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -729,6 +753,12 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons {
+    margin-bottom: 50px;
   }
 }
 

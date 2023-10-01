@@ -104,8 +104,18 @@
 	justify-content: center;
 	margin-bottom: 30px;
 
-	line-height: 1.714;
+	font-size: 12px;
+	line-height: 1.167;
 	color: var(--secondary-color);
+
+	@media screen and (max-width: 479px) {
+		font-size: 2.5vw;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 1.714;
+	}
 }
 
 .info-form__checkbox-current {
@@ -127,7 +137,6 @@
 
 .info-form__btn-conditions {
 	padding: 0;
-	margin-left: 4px;
 	border: none;
 
 	color: var(--accent-color);
