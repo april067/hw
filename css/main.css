@@ -277,7 +277,7 @@ body.dark-theme {
   --bg-color-minor: #aaaaaa78;
   background-color: #383839;
 }
-body.modal-open {
+body.modal-open, body.menu-open {
   overflow: hidden;
 }
 
@@ -1311,12 +1311,32 @@ img {
   margin: 0 auto;
 }
 
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10vw 7vw;
+  overflow-y: scroll;
+  background-color: var(--design-white-color);
+  opacity: 1;
+  -webkit-transition: opacity 250ms var(--timing-fn);
+  transition: opacity 250ms var(--timing-fn);
+}
+.mob-menu.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
 .mobmenu__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
   display: inline-block;
   width: 40px;
   height: 40px;
   padding: 0;
-  margin-left: auto;
   border: none;
   color: var(--main-color);
   background-color: transparent;
@@ -1335,4 +1355,63 @@ img {
 
 .mobmenu__button-icon {
   fill: currentColor;
+}
+
+.mob-nav {
+  margin-bottom: 63vw;
+}
+
+.mob-nav__item:not(:last-child) {
+  margin-bottom: 6.7vw;
+}
+
+.mob-nav__link {
+  font-size: 8vw;
+  line-height: 1.175;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  -webkit-transition: color 250ms var(--timing-fn);
+  transition: color 250ms var(--timing-fn);
+}
+.mob-nav__link:hover, .mob-nav__link:focus {
+  color: var(--accent-color);
+}
+
+.mob-address {
+  margin-bottom: 13vw;
+}
+
+.mob-address__link {
+  display: block;
+  font-size: 5vw;
+  line-height: 1.167;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  -webkit-transition: color 250ms var(--timing-fn);
+  transition: color 250ms var(--timing-fn);
+}
+.mob-address__link:hover, .mob-address__link:focus {
+  color: var(--accent-color);
+}
+.mob-address__link:not(:last-child) {
+  margin-bottom: 6.7vw;
+}
+
+.mob-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mob-social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-social__link {
+  padding: 0 2.1vw;
+  color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */

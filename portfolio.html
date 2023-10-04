@@ -47,16 +47,9 @@
 						+1 212-772-4150</a
 					>
 				</div>
-				<button class="mobmenu__button" type="button">
-					<svg class="mobmenu__button-icon" width="40" height="40">
-						<use
-							class="mobmenu__button-icon--close"
-							href="./images/sprite.svg#icon-mobmenu-close"
-						></use>
-						<use
-							class="mobmenu__button-icon--open"
-							href="./images/sprite.svg#icon-mobmenu-open"
-						></use>
+				<button class="mobmenu__button" type="button" data-menu-open>
+					<svg class="mobmenu__button-icon" width="40" height="40" aria-label="mobile menu button">
+						<use href="./images/sprite.svg#icon-mobmenu-open"></use>
 					</svg>
 				</button>
 			</div>
@@ -370,6 +363,51 @@
 			</div>
 		</footer>
 
+		<div class="mob-menu is-hidden" data-menu>
+			<button class="mobmenu__button" type="button" data-menu-close>
+				<svg class="mobmenu__button-icon" width="40" height="40" aria-label="mobile menu button">
+					<use href="./images/sprite.svg#icon-mobmenu-close"></use>
+				</svg>
+			</button>
+
+			<nav class="mob-nav">
+				<ul class="mob-nav__list">
+					<li class="mob-nav__item">
+						<a class="mob-nav__link" href="/index.html">Studio</a>
+					</li>
+					<li class="mob-nav__item">
+						<a class="mob-nav__link nav__link--current" href="/portfolio.html">Portfolio</a>
+					</li>
+					<li class="mob-nav__item">
+						<a class="mob-nav__link mob-nav__link--contacts" href="#contacts">Contacts</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="mob-address">
+				<a class="mob-address__link" href="tel:+12127724150"> +1 212-772-4150</a>
+				<a class="mob-address__link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+			</div>
+			<ul class="mob-social">
+				<li class="mob-social__item">
+					<a class="mob-social__link" href="https://instagram.com">Instagram</a>
+				</li>
+
+				<li class="mob-social__item">
+					<a class="mob-social__link" href="https://twitter.com">Twitter</a>
+				</li>
+
+				<li class="mob-social__item">
+					<a class="mob-social__link" href="https://facebook.com">Facebook</a>
+				</li>
+
+				<li class="mob-social__item">
+					<a class="mob-social__link" href="https://linkedin.com">LinkedIn</a>
+				</li>
+			</ul>
+		</div>
+
 		<script src="./js/footer-form.js"></script>
+		<script src="./js/mob-menu.js"></script>
 	</body>
 </html>

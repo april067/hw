@@ -10,7 +10,8 @@
 
 	function toggleModal() {
 		refs.modal.classList.toggle('is-hidden')
-		console.log('click modal-button')
 		document.body.classList.toggle('modal-open')
+
+		console.log('click modal-button')
 	}
 })()
