@@ -108,6 +108,10 @@
 	font-size: 18px;
 	line-height: 1.556;
 	color: var(--design-white-color);
+
+	@media screen and (max-width: 479px) {
+		font-size: 3.75vw;
+	}
 }
 
 .projects__desc-wrap {
@@ -128,10 +132,18 @@
 	font-weight: 700;
 	line-height: 2;
 	letter-spacing: 0.06em;
+
+	@media screen and (max-width: 479px) {
+		font-size: 3.75vw;
+	}
 }
 
 .projects__desc {
 	font-size: 16px;
 	line-height: 1.875;
 	color: var(--secondary-color);
+
+	@media screen and (max-width: 479px) {
+		font-size: 3.333vw;
+	}
 }
