@@ -14,622 +14,639 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<header class="header">
-			<div class="container">
-				<a class="logo logo--top" href="./index.html">
-					<span class="logo--accent">Web</span>Studio</a
-				>
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a class="nav__link" href="./index.html">Studio</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link nav__link--current" href="./portfolio.html">Portfolio</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="#contacts">Contacts</a>
-						</li>
-					</ul>
-				</nav>
-
-				<div class="header-address">
-					<a class="header-address__link" href="mailto:info@devstudio.com">
-						<svg class="header-address__icon" width="16" height="12">
-							<use href="./images/sprite.svg#icon-envelope"></use>
-						</svg>
-						info@devstudio.com</a
-					>
-					<a class="header-address__link" href="tel:+12127724150"
-						><svg class="header-address__icon" width="10" height="16">
-							<use href="./images/sprite.svg#icon-smartphone"></use>
-						</svg>
-						+1 212-772-4150</a
-					>
-				</div>
-				<button class="mobmenu__button" type="button" data-menu-open>
-					<svg class="mobmenu__button-icon" width="40" height="40" aria-label="mobile menu button">
-						<use href="./images/sprite.svg#icon-mobmenu-open"></use>
-					</svg>
-				</button>
-			</div>
-		</header>
-
-		<main>
-			<section class="portfolio">
+		<div class="wrapper">
+			<header class="header">
 				<div class="container">
-					<h1 class="visually-hidden">Portfolio</h1>
-					<ul class="buttons">
-						<li class="buttons__item">
-							<button class="buttons__snap" type="button" data-filter="all">All</button>
-						</li>
-						<li class="buttons__item">
-							<button class="buttons__snap" type="button" data-filter="web">Web-sites</button>
-						</li>
-						<li class="buttons__item">
-							<button class="buttons__snap" type="button" data-filter="apps">Apps</button>
-						</li>
-						<li class="buttons__item">
-							<button class="buttons__snap" type="button" data-filter="design">Design</button>
-						</li>
-						<li class="buttons__item">
-							<button class="buttons__snap" type="button" data-filter="marketing">Marketing</button>
-						</li>
-					</ul>
+					<a class="logo logo--top" href="./index.html">
+						<span class="logo--accent">Web</span>Studio</a
+					>
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link" href="./index.html">Studio</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link nav__link--current" href="./portfolio.html">Portfolio</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#contacts">Contacts</a>
+							</li>
+						</ul>
+					</nav>
 
-					<ul class="projects">
-						<li class="projects__item" data-item="web">
-							<a class="projects__link" href="/">
-								<div class="projects__wrapper overflow-hidden">
-									<picture>
-										<source
-											srcset="
-												./images/portfolio/desktop/web-site/technoduck/technoduck-d.webp    370w,
-												./images/portfolio/desktop/web-site/technoduck/technoduck-d@2x.webp 740w
-											"
-											sizes="370px"
-											type="image/webp"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/tab/web-site/technoduck/technoduck-t.webp    354w,
-												./images/portfolio/tab/web-site/technoduck/technoduck-t@2x.webp 708w
-											"
-											sizes="354px"
-											type="image/webp"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/mob/web-site/technoduck/technoduck-m.webp    450w,
-												./images/portfolio/mob/web-site/technoduck/technoduck-m@2x.webp 900w
-											"
-											sizes="(min-width: 480px) 450px, 100vw"
-											type="image/webp"
-										/>
-										<img
-											class="projects__img"
-											src="./images/portfolio/desktop/web-site/technoduck/technoduck-d@2x.jpg"
-											alt="Technoduck"
-										/>
-									</picture>
-									<div class="projects__overlay projects__overlay--web">
-										<p class="projects__details">
-											Technoduck is a state-of-the-art coronavirus distribution platform. Companies
-											use this platform for digital espionage and attacks on competitors' secure
-											servers.
-										</p>
-									</div>
-								</div>
-								<div class="projects__desc-wrap">
-									<h3 class="projects__name">Technoduck</h3>
-									<p class="projects__desc">Web-site</p>
-								</div>
-							</a>
-						</li>
-
-						<li class="projects__item" data-item="design">
-							<a class="projects__link" href="/">
-								<div class="projects__wrapper">
-									<picture>
-										<source
-											srcset="
-												./images/portfolio/desktop/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-d.webp    370w,
-												./images/portfolio/desktop/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-d@2x.webp 740w
-											"
-											sizes="370px"
-											type="image/webp"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/tab/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-t.webp    354w,
-												./images/portfolio/tab/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-t@2x.webp 708w
-											"
-											sizes="354px"
-											type="image/webp"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/mob/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-m.webp    450w,
-												./images/portfolio/mob/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-m@2x.webp 900w
-											"
-											sizes="(min-width: 480px) 450px, 100vw"
-											type="image/webp"
-										/>
-										<img
-											class="projects__img"
-											src="./images/portfolio/desktop/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-d@2x.jpg"
-											alt="Poster New Orlean vs Golden Star"
-										/>
-									</picture>
-									<div class="projects__overlay projects__overlay--design">
-										<p class="projects__details">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
-											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
-											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
-										</p>
-									</div>
-								</div>
-								<div class="projects__desc-wrap">
-									<h3 class="projects__name">Poster New Orlean vs Golden Star</h3>
-									<p class="projects__desc">Design</p>
-								</div>
-							</a>
-						</li>
-
-						<li class="projects__item" data-item="apps">
-							<a class="projects__link" href="/">
-								<div class="projects__wrapper">
-									<picture>
-										<source
-											srcset="
-												./images/portfolio/desktop/apps/seafood-restaurant/seafood-restaurant-d.webp    370w,
-												./images/portfolio/desktop/apps/seafood-restaurant/seafood-restaurant-d@2x.webp 740w
-											"
-											sizes="370px"
-											type="image/webp"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/tab/apps/seafood-restaurant/seafood-restaurant-t.webp    354w,
-												./images/portfolio/tab/apps/seafood-restaurant/seafood-restaurant-t@2x.webp 708w
-											"
-											sizes="354px"
-											type="image/webp"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/mob/apps/seafood-restaurant/seafood-restaurant-m.webp    450w,
-												./images/portfolio/mob/apps/seafood-restaurant/seafood-restaurant-m@2x.webp 900w
-											"
-											sizes="(min-width: 480px) 450px, 100vw"
-											type="image/webp"
-										/>
-										<img
-											class="projects__img"
-											src="./images/portfolio/desktop/apps/seafood-restaurant/seafood-restaurant-d@2x.jpg"
-											alt="Seafood Restaurant"
-										/>
-									</picture>
-									<div class="projects__overlay projects__overlay--apps">
-										<p class="projects__details">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
-											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
-											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
-										</p>
-									</div>
-								</div>
-								<div class="projects__desc-wrap">
-									<h3 class="projects__name">Seafood Restaurant</h3>
-									<p class="projects__desc">Apps</p>
-								</div>
-							</a>
-						</li>
-
-						<li class="projects__item" data-item="marketing">
-							<a class="projects__link" href="/">
-								<div class="projects__wrapper">
-									<picture>
-										<source
-											srcset="
-												./images/portfolio/desktop/marketing/project-prime/project-prime-d.webp    370w,
-												./images/portfolio/desktop/marketing/project-prime/project-prime-d@2x.webp 740w
-											"
-											sizes="370px"
-											type="image/webp"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/tab/marketing/project-prime/project-prime-t.webp    354w,
-												./images/portfolio/tab/marketing/project-prime/project-prime-t@2x.webp 708w
-											"
-											sizes="354px"
-											type="image/webp"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/mob/marketing/project-prime/project-prime-m.webp    450w,
-												./images/portfolio/mob/marketing/project-prime/project-prime-m@2x.webp 900w
-											"
-											sizes="(min-width: 480px) 450px, 100vw"
-											type="image/webp"
-										/>
-										<img
-											class="projects__img"
-											src="./images/portfolio/desktop/marketing/project-prime/project-prime-d@2x.jpg"
-											alt="Project Prime"
-										/>
-									</picture>
-									<div class="projects__overlay projects__overlay--marketing">
-										<p class="projects__details">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
-											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
-											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
-										</p>
-									</div>
-								</div>
-								<div class="projects__desc-wrap">
-									<h3 class="projects__name">Project Prime</h3>
-									<p class="projects__desc">Marketing</p>
-								</div>
-							</a>
-						</li>
-
-						<li class="projects__item" data-item="apps">
-							<a class="projects__link" href="/">
-								<div class="projects__wrapper">
-									<picture>
-										<source
-											srcset="
-												./images/portfolio/desktop/apps/project-boxes/project-boxes-d.webp    370w,
-												./images/portfolio/desktop/apps/project-boxes/project-boxes-d@2x.webp 740w
-											"
-											sizes="370px"
-											type="image/webp"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/tab/apps/project-boxes/project-boxes-t.webp    354w,
-												./images/portfolio/tab/apps/project-boxes/project-boxes-t@2x.webp 708w
-											"
-											sizes="354px"
-											type="image/webp"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/mob/apps/project-boxes/project-boxes-m.webp    450w,
-												./images/portfolio/mob/apps/project-boxes/project-boxes-m@2x.webp 900w
-											"
-											sizes="(min-width: 480px) 450px, 100vw"
-											type="image/webp"
-										/>
-										<img
-											class="projects__img"
-											src="./images/portfolio/desktop/apps/project-boxes/project-boxes-d@2x.jpg"
-											alt="Project Boxes"
-										/>
-									</picture>
-									<div class="projects__overlay projects__overlay--apps">
-										<p class="projects__details">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
-											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
-											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
-										</p>
-									</div>
-								</div>
-								<div class="projects__desc-wrap">
-									<h3 class="projects__name">Project Boxes</h3>
-									<p class="projects__desc">Apps</p>
-								</div>
-							</a>
-						</li>
-
-						<li class="projects__item" data-item="web">
-							<a class="projects__link" href="/">
-								<div class="projects__wrapper overflow-hidden">
-									<picture>
-										<source
-											srcset="
-												./images/portfolio/desktop/web-site/inspiration-has-no-borders/inspiration-has-no-borders-d.webp    370w,
-												./images/portfolio/desktop/web-site/inspiration-has-no-borders/inspiration-has-no-borders-d@2x.webp 740w
-											"
-											sizes="370px"
-											type="image/webp"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/tab/web-site/inspiration-has-no-borders/inspiration-has-no-borders-t.webp    354w,
-												./images/portfolio/tab/web-site/inspiration-has-no-borders/inspiration-has-no-borders-t@2x.webp 708w
-											"
-											sizes="354px"
-											type="image/webp"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/mob/web-site/inspiration-has-no-borders/inspiration-has-no-borders-m.webp    450w,
-												./images/portfolio/mob/web-site/inspiration-has-no-borders/inspiration-has-no-borders-m@2x.webp 900w
-											"
-											sizes="(min-width: 480px) 450px, 100vw"
-											type="image/webp"
-										/>
-										<img
-											class="projects__img"
-											src="./images/portfolio/desktop/web-site/inspiration-has-no-borders/inspiration-has-no-borders-d@2x.jpg"
-											alt="Inspiration has no Borders"
-										/>
-									</picture>
-									<div class="projects__overlay projects__overlay--web">
-										<p class="projects__details">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
-											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
-											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
-										</p>
-									</div>
-								</div>
-								<div class="projects__desc-wrap">
-									<h3 class="projects__name">Inspiration has no Borders</h3>
-									<p class="projects__desc">Web-site</p>
-								</div>
-							</a>
-						</li>
-
-						<li class="projects__item" data-item="design">
-							<a class="projects__link" href="/">
-								<div class="projects__wrapper">
-									<picture>
-										<source
-											srcset="
-												./images/portfolio/desktop/design/limited-edition/limited-edition-d.webp    370w,
-												./images/portfolio/desktop/design/limited-edition/limited-edition-d@2x.webp 740w
-											"
-											sizes="370px"
-											type="image/webp"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/tab/design/limited-edition/limited-edition-t.webp    354w,
-												./images/portfolio/tab/design/limited-edition/limited-edition-t@2x.webp 708w
-											"
-											sizes="354px"
-											type="image/webp"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/mob/design/limited-edition/limited-edition-m.webp    450w,
-												./images/portfolio/mob/design/limited-edition/limited-edition-m@2x.webp 900w
-											"
-											sizes="(min-width: 480px) 450px, 100vw"
-											type="image/webp"
-										/>
-										<img
-											class="projects__img"
-											src="./images/portfolio/desktop/design/limited-edition/limited-edition-d@2x.jpg"
-											alt="Limited Edition"
-										/>
-									</picture>
-									<div class="projects__overlay projects__overlay--design">
-										<p class="projects__details">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
-											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
-											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
-										</p>
-									</div>
-								</div>
-								<div class="projects__desc-wrap">
-									<h3 class="projects__name">Limited Edition</h3>
-									<p class="projects__desc">Design</p>
-								</div>
-							</a>
-						</li>
-
-						<li class="projects__item" data-item="marketing">
-							<a class="projects__link" href="/">
-								<div class="projects__wrapper">
-									<picture>
-										<source
-											srcset="
-												./images/portfolio/desktop/marketing/project-lab/project-lab-d.webp    370w,
-												./images/portfolio/desktop/marketing/project-lab/project-lab-d@2x.webp 740w
-											"
-											sizes="370px"
-											type="image/webp"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/tab/marketing/project-lab/project-lab-t.webp    354w,
-												./images/portfolio/tab/marketing/project-lab/project-lab-t@2x.webp 708w
-											"
-											sizes="354px"
-											type="image/webp"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/mob/marketing/project-lab/project-lab-m.webp    450w,
-												./images/portfolio/mob/marketing/project-lab/project-lab-m@2x.webp 900w
-											"
-											sizes="(min-width: 480px) 450px, 100vw"
-											type="image/webp"
-										/>
-										<img
-											class="projects__img"
-											src="./images/portfolio/desktop/marketing/project-lab/project-lab-d@2x.jpg"
-											alt="Project LAB"
-										/>
-									</picture>
-									<div class="projects__overlay projects__overlay--marketing">
-										<p class="projects__details">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
-											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
-											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
-										</p>
-									</div>
-								</div>
-								<div class="projects__desc-wrap">
-									<h3 class="projects__name">Project LAB</h3>
-									<p class="projects__desc">Marketing</p>
-								</div>
-							</a>
-						</li>
-
-						<li class="projects__item" data-item="apps">
-							<a class="projects__link" href="/">
-								<div class="projects__wrapper">
-									<picture>
-										<source
-											srcset="
-												./images/portfolio/desktop/apps/growing-business/growing-business-d.webp    370w,
-												./images/portfolio/desktop/apps/growing-business/growing-business-d@2x.webp 740w
-											"
-											sizes="370px"
-											type="image/webp"
-											media="(min-width: 1200px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/tab/apps/growing-business/growing-business-t.webp    354w,
-												./images/portfolio/tab/apps/growing-business/growing-business-t@2x.webp 708w
-											"
-											sizes="354px"
-											type="image/webp"
-											media="(min-width: 768px)"
-										/>
-										<source
-											srcset="
-												./images/portfolio/mob/apps/growing-business/growing-business-m.webp    450w,
-												./images/portfolio/mob/apps/growing-business/growing-business-m@2x.webp 900w
-											"
-											sizes="(min-width: 480px) 450px, 100vw"
-											type="image/webp"
-										/>
-										<img
-											class="projects__img"
-											src="./images/portfolio/desktop/apps/growing-business/growing-business-d@2x.jpg"
-											alt="Growing Business"
-										/>
-									</picture>
-									<div class="projects__overlay projects__overlay--apps">
-										<p class="projects__details">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
-											similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
-											eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos autem
-										</p>
-									</div>
-								</div>
-								<div class="projects__desc-wrap">
-									<h3 class="projects__name">Growing Business</h3>
-									<p class="projects__desc">Apps</p>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</main>
-
-		<footer class="footer" id="contacts">
-			<div class="container">
-				<div class="footer-address">
-					<a class="logo logo--bottom" href="./index.html">
-						<span class="logo--accent">Web</span>Studio
-					</a>
-
-					<address class="footer-address__contacts">
-						<p class="footer-address__route">695 Park Ave, NY 10065, USA</p>
-						<a class="footer-address__link" href="mailto:info@devstudio.com">
-							info@devstudio.com
-						</a>
-						<a class="footer-address__link" href="tel:+12127724150">+1 212-772-4150</a>
-					</address>
-				</div>
-
-				<div class="footer-social">
-					<h3 class="footer-social__title">Find us on</h3>
-					<ul class="social">
-						<li class="social__item">
-							<a
-								class="social__link social__link--footer"
-								target="_blank"
-								href="https://instagram.com"
-							>
-								<svg class="social__icon">
-									<use href="./images/sprite.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-
-						<li class="social__item">
-							<a
-								class="social__link social__link--footer"
-								target="_blank"
-								href="https://twitter.com"
-							>
-								<svg class="social__icon">
-									<use href="./images/sprite.svg#icon-twitter"></use>
-								</svg>
-							</a>
-						</li>
-
-						<li class="social__item">
-							<a
-								class="social__link social__link--footer"
-								target="_blank"
-								href="https://facebook.com"
-							>
-								<svg class="social__icon">
-									<use href="./images/sprite.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-
-						<li class="social__item">
-							<a
-								class="social__link social__link--footer"
-								target="_blank"
-								href="https://linkedin.com"
-							>
-								<svg class="social__icon">
-									<use href="./images/sprite.svg#icon-linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="footer-subscribe">
-					<h3 class="footer-subscribe__title">Subscribe to the newsletter</h3>
-					<form class="subscribe-form">
-						<input
-							class="subscribe-form__email"
-							type="email"
-							name="subscribe-email"
-							placeholder="E-mail"
-							required
-						/>
-						<button class="subscribe-form__btn" type="submit">
-							Subscribe
-							<svg class="subscribe-form__icon" width="24" height="24">
-								<use href="./images/sprite.svg#icon-send"></use>
+					<div class="header-address">
+						<a class="header-address__link" href="mailto:info@devstudio.com">
+							<svg class="header-address__icon" width="16" height="12">
+								<use href="./images/sprite.svg#icon-envelope"></use>
 							</svg>
-						</button>
-					</form>
+							info@devstudio.com</a
+						>
+						<a class="header-address__link" href="tel:+12127724150"
+							><svg class="header-address__icon" width="10" height="16">
+								<use href="./images/sprite.svg#icon-smartphone"></use>
+							</svg>
+							+1 212-772-4150</a
+						>
+					</div>
+					<button class="mobmenu__button" type="button" data-menu-open>
+						<svg
+							class="mobmenu__button-icon"
+							width="40"
+							height="40"
+							aria-label="mobile menu button"
+						>
+							<use href="./images/sprite.svg#icon-mobmenu-open"></use>
+						</svg>
+					</button>
 				</div>
-			</div>
-		</footer>
+			</header>
+
+			<main class="main">
+				<section class="portfolio">
+					<div class="container">
+						<h1 class="visually-hidden">Portfolio</h1>
+						<ul class="buttons">
+							<li class="buttons__item">
+								<button class="buttons__snap" type="button" data-filter="all">All</button>
+							</li>
+							<li class="buttons__item">
+								<button class="buttons__snap" type="button" data-filter="web">Web-sites</button>
+							</li>
+							<li class="buttons__item">
+								<button class="buttons__snap" type="button" data-filter="apps">Apps</button>
+							</li>
+							<li class="buttons__item">
+								<button class="buttons__snap" type="button" data-filter="design">Design</button>
+							</li>
+							<li class="buttons__item">
+								<button class="buttons__snap" type="button" data-filter="marketing">
+									Marketing
+								</button>
+							</li>
+						</ul>
+
+						<ul class="projects">
+							<li class="projects__item" data-item="web">
+								<a class="projects__link" href="/">
+									<div class="projects__wrapper overflow-hidden">
+										<picture>
+											<source
+												srcset="
+													./images/portfolio/desktop/web-site/technoduck/technoduck-d.webp    370w,
+													./images/portfolio/desktop/web-site/technoduck/technoduck-d@2x.webp 740w
+												"
+												sizes="370px"
+												type="image/webp"
+												media="(min-width: 1200px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/tab/web-site/technoduck/technoduck-t.webp    354w,
+													./images/portfolio/tab/web-site/technoduck/technoduck-t@2x.webp 708w
+												"
+												sizes="354px"
+												type="image/webp"
+												media="(min-width: 768px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/mob/web-site/technoduck/technoduck-m.webp    450w,
+													./images/portfolio/mob/web-site/technoduck/technoduck-m@2x.webp 900w
+												"
+												sizes="(min-width: 480px) 450px, 100vw"
+												type="image/webp"
+											/>
+											<img
+												class="projects__img"
+												src="./images/portfolio/desktop/web-site/technoduck/technoduck-d@2x.jpg"
+												alt="Technoduck"
+											/>
+										</picture>
+										<div class="projects__overlay projects__overlay--web">
+											<p class="projects__details">
+												Technoduck is a state-of-the-art coronavirus distribution platform.
+												Companies use this platform for digital espionage and attacks on
+												competitors' secure servers.
+											</p>
+										</div>
+									</div>
+									<div class="projects__desc-wrap">
+										<h3 class="projects__name">Technoduck</h3>
+										<p class="projects__desc">Web-site</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="projects__item" data-item="design">
+								<a class="projects__link" href="/">
+									<div class="projects__wrapper">
+										<picture>
+											<source
+												srcset="
+													./images/portfolio/desktop/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-d.webp    370w,
+													./images/portfolio/desktop/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-d@2x.webp 740w
+												"
+												sizes="370px"
+												type="image/webp"
+												media="(min-width: 1200px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/tab/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-t.webp    354w,
+													./images/portfolio/tab/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-t@2x.webp 708w
+												"
+												sizes="354px"
+												type="image/webp"
+												media="(min-width: 768px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/mob/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-m.webp    450w,
+													./images/portfolio/mob/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-m@2x.webp 900w
+												"
+												sizes="(min-width: 480px) 450px, 100vw"
+												type="image/webp"
+											/>
+											<img
+												class="projects__img"
+												src="./images/portfolio/desktop/design/poster-new-orlean-vs-golden-star/poster-new-orlean-vs-golden-star-d@2x.jpg"
+												alt="Poster New Orlean vs Golden Star"
+											/>
+										</picture>
+										<div class="projects__overlay projects__overlay--design">
+											<p class="projects__details">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
+												similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
+												eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos
+												autem
+											</p>
+										</div>
+									</div>
+									<div class="projects__desc-wrap">
+										<h3 class="projects__name">Poster New Orlean vs Golden Star</h3>
+										<p class="projects__desc">Design</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="projects__item" data-item="apps">
+								<a class="projects__link" href="/">
+									<div class="projects__wrapper">
+										<picture>
+											<source
+												srcset="
+													./images/portfolio/desktop/apps/seafood-restaurant/seafood-restaurant-d.webp    370w,
+													./images/portfolio/desktop/apps/seafood-restaurant/seafood-restaurant-d@2x.webp 740w
+												"
+												sizes="370px"
+												type="image/webp"
+												media="(min-width: 1200px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/tab/apps/seafood-restaurant/seafood-restaurant-t.webp    354w,
+													./images/portfolio/tab/apps/seafood-restaurant/seafood-restaurant-t@2x.webp 708w
+												"
+												sizes="354px"
+												type="image/webp"
+												media="(min-width: 768px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/mob/apps/seafood-restaurant/seafood-restaurant-m.webp    450w,
+													./images/portfolio/mob/apps/seafood-restaurant/seafood-restaurant-m@2x.webp 900w
+												"
+												sizes="(min-width: 480px) 450px, 100vw"
+												type="image/webp"
+											/>
+											<img
+												class="projects__img"
+												src="./images/portfolio/desktop/apps/seafood-restaurant/seafood-restaurant-d@2x.jpg"
+												alt="Seafood Restaurant"
+											/>
+										</picture>
+										<div class="projects__overlay projects__overlay--apps">
+											<p class="projects__details">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
+												similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
+												eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos
+												autem
+											</p>
+										</div>
+									</div>
+									<div class="projects__desc-wrap">
+										<h3 class="projects__name">Seafood Restaurant</h3>
+										<p class="projects__desc">Apps</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="projects__item" data-item="marketing">
+								<a class="projects__link" href="/">
+									<div class="projects__wrapper">
+										<picture>
+											<source
+												srcset="
+													./images/portfolio/desktop/marketing/project-prime/project-prime-d.webp    370w,
+													./images/portfolio/desktop/marketing/project-prime/project-prime-d@2x.webp 740w
+												"
+												sizes="370px"
+												type="image/webp"
+												media="(min-width: 1200px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/tab/marketing/project-prime/project-prime-t.webp    354w,
+													./images/portfolio/tab/marketing/project-prime/project-prime-t@2x.webp 708w
+												"
+												sizes="354px"
+												type="image/webp"
+												media="(min-width: 768px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/mob/marketing/project-prime/project-prime-m.webp    450w,
+													./images/portfolio/mob/marketing/project-prime/project-prime-m@2x.webp 900w
+												"
+												sizes="(min-width: 480px) 450px, 100vw"
+												type="image/webp"
+											/>
+											<img
+												class="projects__img"
+												src="./images/portfolio/desktop/marketing/project-prime/project-prime-d@2x.jpg"
+												alt="Project Prime"
+											/>
+										</picture>
+										<div class="projects__overlay projects__overlay--marketing">
+											<p class="projects__details">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
+												similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
+												eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos
+												autem
+											</p>
+										</div>
+									</div>
+									<div class="projects__desc-wrap">
+										<h3 class="projects__name">Project Prime</h3>
+										<p class="projects__desc">Marketing</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="projects__item" data-item="apps">
+								<a class="projects__link" href="/">
+									<div class="projects__wrapper">
+										<picture>
+											<source
+												srcset="
+													./images/portfolio/desktop/apps/project-boxes/project-boxes-d.webp    370w,
+													./images/portfolio/desktop/apps/project-boxes/project-boxes-d@2x.webp 740w
+												"
+												sizes="370px"
+												type="image/webp"
+												media="(min-width: 1200px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/tab/apps/project-boxes/project-boxes-t.webp    354w,
+													./images/portfolio/tab/apps/project-boxes/project-boxes-t@2x.webp 708w
+												"
+												sizes="354px"
+												type="image/webp"
+												media="(min-width: 768px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/mob/apps/project-boxes/project-boxes-m.webp    450w,
+													./images/portfolio/mob/apps/project-boxes/project-boxes-m@2x.webp 900w
+												"
+												sizes="(min-width: 480px) 450px, 100vw"
+												type="image/webp"
+											/>
+											<img
+												class="projects__img"
+												src="./images/portfolio/desktop/apps/project-boxes/project-boxes-d@2x.jpg"
+												alt="Project Boxes"
+											/>
+										</picture>
+										<div class="projects__overlay projects__overlay--apps">
+											<p class="projects__details">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
+												similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
+												eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos
+												autem
+											</p>
+										</div>
+									</div>
+									<div class="projects__desc-wrap">
+										<h3 class="projects__name">Project Boxes</h3>
+										<p class="projects__desc">Apps</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="projects__item" data-item="web">
+								<a class="projects__link" href="/">
+									<div class="projects__wrapper overflow-hidden">
+										<picture>
+											<source
+												srcset="
+													./images/portfolio/desktop/web-site/inspiration-has-no-borders/inspiration-has-no-borders-d.webp    370w,
+													./images/portfolio/desktop/web-site/inspiration-has-no-borders/inspiration-has-no-borders-d@2x.webp 740w
+												"
+												sizes="370px"
+												type="image/webp"
+												media="(min-width: 1200px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/tab/web-site/inspiration-has-no-borders/inspiration-has-no-borders-t.webp    354w,
+													./images/portfolio/tab/web-site/inspiration-has-no-borders/inspiration-has-no-borders-t@2x.webp 708w
+												"
+												sizes="354px"
+												type="image/webp"
+												media="(min-width: 768px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/mob/web-site/inspiration-has-no-borders/inspiration-has-no-borders-m.webp    450w,
+													./images/portfolio/mob/web-site/inspiration-has-no-borders/inspiration-has-no-borders-m@2x.webp 900w
+												"
+												sizes="(min-width: 480px) 450px, 100vw"
+												type="image/webp"
+											/>
+											<img
+												class="projects__img"
+												src="./images/portfolio/desktop/web-site/inspiration-has-no-borders/inspiration-has-no-borders-d@2x.jpg"
+												alt="Inspiration has no Borders"
+											/>
+										</picture>
+										<div class="projects__overlay projects__overlay--web">
+											<p class="projects__details">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
+												similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
+												eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos
+												autem
+											</p>
+										</div>
+									</div>
+									<div class="projects__desc-wrap">
+										<h3 class="projects__name">Inspiration has no Borders</h3>
+										<p class="projects__desc">Web-site</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="projects__item" data-item="design">
+								<a class="projects__link" href="/">
+									<div class="projects__wrapper">
+										<picture>
+											<source
+												srcset="
+													./images/portfolio/desktop/design/limited-edition/limited-edition-d.webp    370w,
+													./images/portfolio/desktop/design/limited-edition/limited-edition-d@2x.webp 740w
+												"
+												sizes="370px"
+												type="image/webp"
+												media="(min-width: 1200px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/tab/design/limited-edition/limited-edition-t.webp    354w,
+													./images/portfolio/tab/design/limited-edition/limited-edition-t@2x.webp 708w
+												"
+												sizes="354px"
+												type="image/webp"
+												media="(min-width: 768px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/mob/design/limited-edition/limited-edition-m.webp    450w,
+													./images/portfolio/mob/design/limited-edition/limited-edition-m@2x.webp 900w
+												"
+												sizes="(min-width: 480px) 450px, 100vw"
+												type="image/webp"
+											/>
+											<img
+												class="projects__img"
+												src="./images/portfolio/desktop/design/limited-edition/limited-edition-d@2x.jpg"
+												alt="Limited Edition"
+											/>
+										</picture>
+										<div class="projects__overlay projects__overlay--design">
+											<p class="projects__details">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
+												similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
+												eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos
+												autem
+											</p>
+										</div>
+									</div>
+									<div class="projects__desc-wrap">
+										<h3 class="projects__name">Limited Edition</h3>
+										<p class="projects__desc">Design</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="projects__item" data-item="marketing">
+								<a class="projects__link" href="/">
+									<div class="projects__wrapper">
+										<picture>
+											<source
+												srcset="
+													./images/portfolio/desktop/marketing/project-lab/project-lab-d.webp    370w,
+													./images/portfolio/desktop/marketing/project-lab/project-lab-d@2x.webp 740w
+												"
+												sizes="370px"
+												type="image/webp"
+												media="(min-width: 1200px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/tab/marketing/project-lab/project-lab-t.webp    354w,
+													./images/portfolio/tab/marketing/project-lab/project-lab-t@2x.webp 708w
+												"
+												sizes="354px"
+												type="image/webp"
+												media="(min-width: 768px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/mob/marketing/project-lab/project-lab-m.webp    450w,
+													./images/portfolio/mob/marketing/project-lab/project-lab-m@2x.webp 900w
+												"
+												sizes="(min-width: 480px) 450px, 100vw"
+												type="image/webp"
+											/>
+											<img
+												class="projects__img"
+												src="./images/portfolio/desktop/marketing/project-lab/project-lab-d@2x.jpg"
+												alt="Project LAB"
+											/>
+										</picture>
+										<div class="projects__overlay projects__overlay--marketing">
+											<p class="projects__details">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
+												similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
+												eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos
+												autem
+											</p>
+										</div>
+									</div>
+									<div class="projects__desc-wrap">
+										<h3 class="projects__name">Project LAB</h3>
+										<p class="projects__desc">Marketing</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="projects__item" data-item="apps">
+								<a class="projects__link" href="/">
+									<div class="projects__wrapper">
+										<picture>
+											<source
+												srcset="
+													./images/portfolio/desktop/apps/growing-business/growing-business-d.webp    370w,
+													./images/portfolio/desktop/apps/growing-business/growing-business-d@2x.webp 740w
+												"
+												sizes="370px"
+												type="image/webp"
+												media="(min-width: 1200px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/tab/apps/growing-business/growing-business-t.webp    354w,
+													./images/portfolio/tab/apps/growing-business/growing-business-t@2x.webp 708w
+												"
+												sizes="354px"
+												type="image/webp"
+												media="(min-width: 768px)"
+											/>
+											<source
+												srcset="
+													./images/portfolio/mob/apps/growing-business/growing-business-m.webp    450w,
+													./images/portfolio/mob/apps/growing-business/growing-business-m@2x.webp 900w
+												"
+												sizes="(min-width: 480px) 450px, 100vw"
+												type="image/webp"
+											/>
+											<img
+												class="projects__img"
+												src="./images/portfolio/desktop/apps/growing-business/growing-business-d@2x.jpg"
+												alt="Growing Business"
+											/>
+										</picture>
+										<div class="projects__overlay projects__overlay--apps">
+											<p class="projects__details">
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea voluptate,
+												similique, dolore, tempora assumenda delectus magni deserunt quia distinctio
+												eum hic? Consectetur accusamus voluptates velit ad rerum et dignissimos
+												autem
+											</p>
+										</div>
+									</div>
+									<div class="projects__desc-wrap">
+										<h3 class="projects__name">Growing Business</h3>
+										<p class="projects__desc">Apps</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer" id="contacts">
+				<div class="container">
+					<div class="footer-address">
+						<a class="logo logo--bottom" href="./index.html">
+							<span class="logo--accent">Web</span>Studio
+						</a>
+
+						<address class="footer-address__contacts">
+							<p class="footer-address__route">695 Park Ave, NY 10065, USA</p>
+							<a class="footer-address__link" href="mailto:info@devstudio.com">
+								info@devstudio.com
+							</a>
+							<a class="footer-address__link" href="tel:+12127724150">+1 212-772-4150</a>
+						</address>
+					</div>
+
+					<div class="footer-social">
+						<h3 class="footer-social__title">Find us on</h3>
+						<ul class="social">
+							<li class="social__item">
+								<a
+									class="social__link social__link--footer"
+									target="_blank"
+									href="https://instagram.com"
+								>
+									<svg class="social__icon">
+										<use href="./images/sprite.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+
+							<li class="social__item">
+								<a
+									class="social__link social__link--footer"
+									target="_blank"
+									href="https://twitter.com"
+								>
+									<svg class="social__icon">
+										<use href="./images/sprite.svg#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+
+							<li class="social__item">
+								<a
+									class="social__link social__link--footer"
+									target="_blank"
+									href="https://facebook.com"
+								>
+									<svg class="social__icon">
+										<use href="./images/sprite.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+
+							<li class="social__item">
+								<a
+									class="social__link social__link--footer"
+									target="_blank"
+									href="https://linkedin.com"
+								>
+									<svg class="social__icon">
+										<use href="./images/sprite.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer-subscribe">
+						<h3 class="footer-subscribe__title">Subscribe to the newsletter</h3>
+						<form class="subscribe-form">
+							<input
+								class="subscribe-form__email"
+								type="email"
+								name="subscribe-email"
+								placeholder="E-mail"
+								required
+							/>
+							<button class="subscribe-form__btn" type="submit">
+								Subscribe
+								<svg class="subscribe-form__icon" width="24" height="24">
+									<use href="./images/sprite.svg#icon-send"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+			</footer>
+		</div>
 
 		<!-- MOBILE MENU -->
 		<div class="mob-menu is-hidden" data-menu>
