@@ -1,5 +1,4 @@
 document.querySelector('.info-form').addEventListener('submit', callback);
-document.querySelector('.subscribe-form').addEventListener('submit', callback);
 
 function callback(e) {
 	e.preventDefault();
